@@ -1,0 +1,231 @@
+{
+  "profile": {
+    "name": "Vijay",
+    "handle": "vjy2080",
+    "brand": "VIJAY.DEV",
+    "role": "Frontend & Mobile Developer",
+    "title": "Frontend & Mobile Engineer",
+    "status": "Available for Opportunities",
+    "location": "AVAILABLE WORLDWIDE",
+    "email": "vijay@dev-portfolio.io",
+    "userEmail": "vjy2080@gmail.com",
+    "phone": "+1 (555) 208-2080",
+    "github": "https://github.com/vjy2080",
+    "githubRepo": "https://github.com/vjy2080/my-portfolio.git",
+    "linkedin": "https://linkedin.com",
+    "bioHeadline": "Hi, I'm Vijay. Building High-Performance Cross-Platform Apps.",
+    "bioSummary": "Crafting exceptional web and mobile experiences with React.js, React Native, TypeScript, and JavaScript. Turning complex requirements into fluid, user-centric interfaces.",
+    "cardDescription": "Specializing in cross-platform mobile apps, high-performance web applications, and robust state management.",
+    "coreStack": [
+      {
+        "id": "rn",
+        "name": "React Native",
+        "icon": "phone_iphone",
+        "lucide": "Smartphone",
+        "accent": "sky"
+      },
+      {
+        "id": "react",
+        "name": "React.js",
+        "icon": "code",
+        "lucide": "Code2",
+        "accent": "sky"
+      },
+      {
+        "id": "ts",
+        "name": "TypeScript",
+        "icon": "terminal",
+        "lucide": "Terminal",
+        "accent": "indigo"
+      },
+      {
+        "id": "js",
+        "name": "JavaScript",
+        "icon": "javascript",
+        "lucide": "Cpu",
+        "accent": "sky"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "crypto-wallet",
+      "title": "Cross-Platform Crypto Wallet",
+      "category": "React Native Mobile App",
+      "badgeColor": "sky",
+      "description": "Secure non-custodial crypto wallet built with React Native and TypeScript, featuring biometric authentication, real-time token swaps, and seamless multi-chain support.",
+      "longDescription": "Engineered from the ground up to provide seamless key management and instant decentralized transactions. Implements biometric auth (FaceID/TouchID), AES-256 encrypted local key storage, and zero-latency WebSocket quote streams across Ethereum, Solana, and Polygon.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAAVzzxHy-nK471SwbZxvTtUXLCuULq6Q6IN8a3_Y2ALQyBqy4vrvgq2D1iwHeuXBjjvsMOQGP_pR7LnXSeDKuDBZ2jHq9wPzVFrz4Rec3Z-_U_A6m_blDc-nQo7lOQrHDm2m8eC00P04b22ovkfSetNxRzc6BsgeyBpWu36iGOugaCspax2uPp4PDa1mBgeBy4KUDdh6RPaFzUGcFq8JEXmQcA1ili67ZdjiW_S1Y8Mr0cewaVti8rmA",
+      "tags": ["React Native", "TypeScript", "Zustand"],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Biometric hardware security integration (FaceID / Fingerprint)",
+        "Sub-second multi-chain token swaps with real-time slippage protection",
+        "Offline-first cached balances with optimistic updates",
+        "60 FPS smooth gesture interactions via react-native-reanimated"
+      ],
+      "metrics": {
+        "Rating": "4.9 / 5.0",
+        "Active Users": "120K+",
+        "Response Time": "< 180ms"
+      }
+    },
+    {
+      "id": "saas-dashboard",
+      "title": "Enterprise SaaS Dashboard",
+      "category": "Enterprise SaaS Web",
+      "badgeColor": "indigo",
+      "description": "High-performance analytics dashboard built with Next.js and TypeScript. Features server-side rendering, dynamic charting, and optimized state management for heavy datasets.",
+      "longDescription": "A high-throughput enterprise telemetry and analytics suite processing over 5M events per minute. Built with Next.js App Router, virtualized data tables rendering 100k rows effortlessly, and bespoke SVG chart visualizations.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA22c8itEID61Nzi3uIVrWf1SM4cPB2Y8W764ahvBFgp0FDW05K34bUofSQfkAvkj2l6E4ARLivX54TP8KFDWhMhtOiQx88UX6FGl8d38NGKW4gxIgRw9l6FjreI_bQq3QljYlVF2dDHaFn1HzYQMdwM7skJaK4L_HSHTlBsBX49-LTHNLxiULl5QJlduZurBVU8Bq0z8TddvkoNurEAxwXLhj3eo3Pnn9VsdGfECDckYlwX4zaY1QXXg",
+      "tags": ["Next.js", "TypeScript", "Tailwind"],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Server-Side Rendering & Incremental Static Regeneration",
+        "Interactive time-series canvas and SVG visualizers",
+        "Custom theme engine with Glacier dark mode and high contrast",
+        "Full keyboard accessibility and WCAG AA compliance"
+      ],
+      "metrics": {
+        "PageSpeed": "99 / 100",
+        "Throughput": "5M+ events/min",
+        "Bundle Size": "42kB init"
+      }
+    },
+    {
+      "id": "chat-collab",
+      "title": "Real-time Chat & Collab App",
+      "category": "iOS / Android App",
+      "badgeColor": "sky",
+      "description": "Cross-platform messaging and workspace collaboration tool built using React Native and WebSockets for instant synchronization across iOS and Android devices.",
+      "longDescription": "Unified enterprise messaging client supporting end-to-end encryption, threaded discussions, live markdown preview, and offline voice memos. Synchronized seamlessly via low-latency WebSocket connection with local SQLite cache.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBigrg11BFqgMRSeWaxFFJ1OCb5TXu8F_cAcMi2gqva1YxWNoL_xa3on0NnzMpi2sXSACLNYUAW-0rVKqg-X57mI6aXN0deOuqAnO75j8ygYwa2ALgLgNoAXWNb9hsb1YM3Vq30Mb9va9ntj_kzg_sirw2nC7Ap56SyxytlCJNo8AWXAr-7mikAwsH5Czsibc9lZF5vBfjmP9u_MJ6aXfO811oQbvhaDiaSCqOtTlmQF4ckz9BYNCadVw",
+      "tags": ["React Native", "WebSockets", "Redux"],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Sub-50ms message round-trip latency via persistent WebSockets",
+        "Offline message queuing with auto-reconnect reconciliation",
+        "Native push notifications for iOS and Android",
+        "Media compression pipeline for fluid sharing"
+      ],
+      "metrics": {
+        "Sync Latency": "< 45ms",
+        "Coverage": "iOS + Android",
+        "Crash-Free": "99.98%"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "frontend-mobile",
+      "title": "Frontend & Mobile",
+      "subtitle": "Cross-Platform & Web UI",
+      "icon": "phone_iphone",
+      "accent": "sky",
+      "skills": [
+        { "name": "React.js", "percentage": 98, "experience": "6+ yrs", "specialty": "Next.js, Hooks, Suspense" },
+        { "name": "React Native", "percentage": 95, "experience": "5+ yrs", "specialty": "Expo, Native Bridges, Reanimated" },
+        { "name": "TypeScript", "percentage": 96, "experience": "5+ yrs", "specialty": "Strict Typing, Generics, AST" },
+        { "name": "JavaScript (ES6+)", "percentage": 99, "experience": "7+ yrs", "specialty": "Event Loop, Async, Web Workers" }
+      ]
+    },
+    {
+      "id": "design-styling",
+      "title": "Design & Styling",
+      "subtitle": "Tailwind & UI Architecture",
+      "icon": "palette",
+      "accent": "indigo",
+      "skills": [
+        { "name": "Tailwind CSS", "percentage": 98, "experience": "5+ yrs", "specialty": "Design Tokens, JIT, Glassmorphism" },
+        { "name": "Component Systems", "percentage": 95, "experience": "5+ yrs", "specialty": "Atomic Systems, Storybook, A11y" },
+        { "name": "Responsive Layouts", "percentage": 97, "experience": "6+ yrs", "specialty": "Fluid Typography, Container Queries" },
+        { "name": "UI/UX Polish", "percentage": 92, "experience": "6+ yrs", "specialty": "Micro-interactions, 60fps Motion" }
+      ]
+    },
+    {
+      "id": "state-architecture",
+      "title": "State & Architecture",
+      "subtitle": "Global State & Scalability",
+      "icon": "account_tree",
+      "accent": "sky",
+      "skills": [
+        { "name": "Redux / Zustand", "percentage": 96, "experience": "5+ yrs", "specialty": "RTK Query, Slices, Middleware" },
+        { "name": "State Management", "percentage": 95, "experience": "6+ yrs", "specialty": "Optimistic UI, Normalization, Cache" },
+        { "name": "Cross-Platform Architecture", "percentage": 94, "experience": "5+ yrs", "specialty": "Monorepos, Code Sharing, Modules" },
+        { "name": "Performance Optimization", "percentage": 93, "experience": "6+ yrs", "specialty": "Profiling, Memory Leaks, LCP/CLS" }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-1",
+      "role": "Senior Frontend & Mobile Developer",
+      "company": "Stellar Technologies Inc.",
+      "location": "Remote",
+      "period": "2022 - Present",
+      "badgeColor": "sky",
+      "dotColor": "sky",
+      "description": "Leading cross-platform mobile and web frontend development using React Native, React.js, and TypeScript. Architected modular design systems and optimized rendering performance across iOS, Android, and web clients.",
+      "achievements": [
+        "Spearheaded redesign of flagship mobile app serving 200k+ monthly active users",
+        "Reduced application bundle size by 35% and cut mobile app launch latency by 48%",
+        "Mentored a distributed engineering squad of 6 frontend and mobile developers"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "role": "Frontend Engineer",
+      "company": "Vanguard Digital Labs",
+      "location": "Austin, TX",
+      "period": "2020 - 2022",
+      "badgeColor": "indigo",
+      "dotColor": "indigo",
+      "description": "Developed responsive web applications and dynamic mobile interfaces with React.js and React Native. Implemented robust state management architectures with Redux and Zustand.",
+      "achievements": [
+        "Engineered high-throughput enterprise SaaS analytics dashboards with Next.js",
+        "Standardized design token architecture across iOS and web client applications",
+        "Authored reusable UI component library adopted across 4 major products"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "role": "UI / JavaScript Developer",
+      "company": "Apex Interactive",
+      "location": "New York, NY",
+      "period": "2018 - 2020",
+      "badgeColor": "sky",
+      "dotColor": "sky",
+      "description": "Built interactive single-page applications using modern JavaScript and TypeScript. Focused on high-performance animations, fluid UI layouts, and cross-browser compatibility.",
+      "achievements": [
+        "Developed high-conversion single page applications and fluid landing experiences",
+        "Implemented complex SVG animations and CSS micro-interactions",
+        "Maintained 99.8% cross-browser compatibility and regression testing"
+      ]
+    }
+  ],
+  "contact": {
+    "kicker": "GET IN TOUCH",
+    "headline": "Let's build something extraordinary together.",
+    "description": "Whether you have a web/mobile project in mind, a frontend role to fill, or just want to connect, my inbox is always open.",
+    "directEmail": "vijay@dev-portfolio.io",
+    "phone": "+1 (555) 208-2080",
+    "github": "github.com/vjy2080",
+    "githubUrl": "https://github.com/vjy2080",
+    "repoUrl": "https://github.com/vjy2080/my-portfolio.git"
+  },
+  "navLinks": [
+    { "label": "Home", "href": "#" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "socials": [
+    { "name": "GitHub", "url": "https://github.com/vjy2080" },
+    { "name": "LinkedIn", "url": "https://linkedin.com" },
+    { "name": "Email", "url": "mailto:vijay@dev-portfolio.io" }
+  ]
+}
