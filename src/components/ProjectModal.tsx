@@ -190,68 +190,59 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           ) : (
             /* Interactive Simulator Tab */
             <div className="p-6 rounded-2xl bg-slate-950/80 border border-sky-500/20 flex flex-col gap-6">
-              {project.id === 'crypto-wallet' && (
+              {/* Simulator 1: Huzzle App */}
+              {(project.id === 'huzzle-app' || project.id === 'crypto-wallet') && (
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                     <span className="text-xs uppercase tracking-wider text-sky-400 font-semibold flex items-center gap-2">
                       <Zap className="w-4 h-4 text-sky-400" />
-                      Cross-Platform Swapper Simulation
+                      React Native Mobile Client Simulator
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">Status: Connected (RPC mainnet)</span>
+                    <span className="text-xs text-emerald-400 font-mono">Build: Google Play &bull; v2.4.1</span>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 flex flex-col gap-2">
-                      <label className="text-xs text-slate-400">Pay Token</label>
-                      <div className="flex items-center justify-between">
-                        <input
-                          type="number"
-                          value={cryptoAmount}
-                          onChange={(e) => {
-                            setCryptoAmount(e.target.value);
-                            setCryptoSwapped(false);
-                          }}
-                          className="w-28 bg-transparent text-xl font-bold text-white focus:outline-none"
-                        />
-                        <span className="text-sm font-bold text-sky-400 px-3 py-1 bg-sky-500/10 rounded-lg">
-                          ETH (Ethereum)
-                        </span>
-                      </div>
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col gap-4">
+                    <div className="flex items-center justify-between pb-2 border-b border-slate-800 text-xs">
+                      <span className="font-semibold text-white">Screen: React Navigation Stack</span>
+                      <span className="px-2.5 py-0.5 rounded-full bg-sky-500/10 text-sky-300 font-mono text-[10px]">
+                        Firebase Auth: Google Verified
+                      </span>
                     </div>
 
-                    <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 flex flex-col gap-2">
-                      <label className="text-xs text-slate-400">Receive Token (Simulated)</label>
-                      <div className="flex items-center justify-between">
-                        <span className="text-xl font-bold text-emerald-400 font-mono">
-                          {(parseFloat(cryptoAmount || '0') * 22.4).toFixed(2)}
-                        </span>
-                        <span className="text-sm font-bold text-indigo-400 px-3 py-1 bg-indigo-500/10 rounded-lg">
-                          SOL (Solana)
+                    <div className="p-4 rounded-xl bg-slate-950 border border-sky-500/20 flex flex-col gap-3">
+                      <div className="text-xs font-semibold text-white">Huzzle Community &amp; Career Hub</div>
+                      <p className="text-xs text-slate-300 font-light">
+                        Cross-platform interface built with custom React Native UI components, pixel-perfect Figma styling, and real-time backend state.
+                      </p>
+                      <div className="flex gap-2 pt-2">
+                        <button
+                          type="button"
+                          onClick={() => setCryptoSwapped(!cryptoSwapped)}
+                          className="px-3 py-1.5 rounded-lg bg-sky-500 text-slate-950 text-xs font-bold hover:brightness-110 cursor-pointer"
+                        >
+                          {cryptoSwapped ? 'Profile Active' : 'Switch Tab (Explore)'}
+                        </button>
+                        <span className="text-[11px] text-slate-400 self-center font-mono">
+                          React Navigation: Stack Navigator
                         </span>
                       </div>
                     </div>
                   </div>
 
                   <div className="p-3 rounded-lg bg-sky-500/10 border border-sky-500/20 text-xs text-sky-200 flex items-center justify-between">
-                    <span>Biometric FaceID Gate: Active</span>
-                    <span className="font-mono">Gas fee: $1.12 · Slippage: 0.2%</span>
+                    <span>Platforms: Android (Play Store) &amp; iOS (App Store)</span>
+                    <span className="font-mono">Figma-to-Code: 100% Pixel Accurate</span>
                   </div>
-
-                  <button
-                    onClick={() => setCryptoSwapped(true)}
-                    className="w-full py-3.5 rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 text-slate-950 font-bold text-sm hover:brightness-110 active:scale-95 transition-all shadow-[0_0_20px_rgba(125,211,252,0.3)] cursor-pointer"
-                  >
-                    {cryptoSwapped ? '✓ Biometric Verified & Swapped!' : 'Simulate Swap Execution'}
-                  </button>
                 </div>
               )}
 
-              {project.id === 'saas-dashboard' && (
+              {/* Simulator 2: Aeon Pass Multi-App Suite */}
+              {(project.id === 'aeon-pass' || project.id === 'saas-dashboard') && (
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                     <span className="text-xs uppercase tracking-wider text-indigo-400 font-semibold flex items-center gap-2">
                       <Activity className="w-4 h-4 text-indigo-400" />
-                      Live Telemetry Stream
+                      Aeon Pass: Mobile &amp; Next.js Admin Suite
                     </span>
                     <div className="flex gap-1">
                       {(['traffic', 'latency', 'throughput'] as const).map((m) => (
@@ -264,94 +255,83 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                               : 'text-slate-400 hover:text-white'
                           }`}
                         >
-                          {m}
+                          {m === 'traffic' ? 'Admin Analytics' : m === 'latency' ? 'Gatekeeper App' : 'Guest Pass'}
                         </button>
                       ))}
                     </div>
                   </div>
 
-                  {/* SVG Chart visualization */}
-                  <div className="h-44 w-full bg-slate-900 rounded-xl p-4 flex flex-col justify-between border border-slate-800">
+                  {/* Aeon Pass interactive visualization */}
+                  <div className="p-4 bg-slate-900 rounded-xl flex flex-col justify-between border border-slate-800 gap-3">
                     <div className="flex justify-between text-xs text-slate-400 font-mono">
-                      <span>Telemetry stream: 120s rolling window</span>
-                      <span className="text-indigo-300">P99: 42ms · Error Rate: 0.001%</span>
+                      <span className="text-indigo-300 font-semibold">
+                        {saasMetric === 'traffic'
+                          ? 'Next.js Web Admin Panel — Real-time Visitor Stream'
+                          : saasMetric === 'latency'
+                          ? 'Gatekeeper Mobile Client — QR Scan & OTP Check'
+                          : 'Guest Mobile Client — Pass Request & Approval'}
+                      </span>
+                      <span className="text-emerald-400">Firebase Firestore: Synced</span>
                     </div>
-                    <svg className="w-full h-24 overflow-visible" viewBox="0 0 400 100">
-                      <defs>
-                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#818cf8" stopOpacity="0.4" />
-                          <stop offset="100%" stopColor="#818cf8" stopOpacity="0" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M0,70 Q50,20 100,50 T200,30 T300,60 T400,20 L400,100 L0,100 Z"
-                        fill="url(#chartGrad)"
-                      />
-                      <path
-                        d="M0,70 Q50,20 100,50 T200,30 T300,60 T400,20"
-                        fill="none"
-                        stroke="#818cf8"
-                        strokeWidth="3"
-                      />
-                    </svg>
-                    <div className="flex justify-between text-[11px] text-slate-500 font-mono">
-                      <span>-120s</span>
-                      <span>-60s</span>
-                      <span>Now</span>
+
+                    <div className="p-4 rounded-xl bg-slate-950 border border-indigo-500/20 flex flex-col gap-2">
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-slate-200 font-medium">Active Facility Entries: 342 Today</span>
+                        <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[10px] font-mono">
+                          OTP Verified
+                        </span>
+                      </div>
+                      <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div className="bg-gradient-to-r from-indigo-500 to-sky-400 h-full w-[78%]" />
+                      </div>
+                      <span className="text-[11px] text-slate-400">
+                        Admin dashboard equipped with role-based permissions, automated visitor logs, and export controls.
+                      </span>
                     </div>
                   </div>
                 </div>
               )}
 
-              {project.id === 'chat-collab' && (
+              {/* Simulator 3: Orange App (Flutter) */}
+              {(project.id === 'orange-app' || project.id === 'chat-collab') && (
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                     <span className="text-xs uppercase tracking-wider text-sky-400 font-semibold flex items-center gap-2">
                       <Zap className="w-4 h-4 text-sky-400" />
-                      WebSocket Live Client Emulator
+                      Flutter Offline Sync Engine (Android)
                     </span>
                     <span className="text-xs text-emerald-400 flex items-center gap-1 font-mono">
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                      Connected (Room #eng-core)
+                      Status: {cryptoSwapped ? 'Offline (Cached Mode)' : 'Online (Sync Active)'}
                     </span>
                   </div>
 
-                  {/* Message feed */}
-                  <div className="h-48 overflow-y-auto bg-slate-900 rounded-xl p-3 flex flex-col gap-2.5 border border-slate-800">
-                    {chatMessages.map((msg, idx) => (
-                      <div
-                        key={idx}
-                        className={`flex flex-col max-w-[80%] rounded-xl px-3.5 py-2 text-xs ${
-                          msg.sender === 'user'
-                            ? 'ml-auto bg-sky-500/20 text-sky-100 border border-sky-500/30'
-                            : 'mr-auto bg-slate-800 text-slate-200 border border-slate-700'
+                  <div className="p-4 bg-slate-900 rounded-xl flex flex-col gap-3 border border-slate-800">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-300">Network Simulation:</span>
+                      <button
+                        type="button"
+                        onClick={() => setCryptoSwapped(!cryptoSwapped)}
+                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                          cryptoSwapped
+                            ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                            : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
                         }`}
                       >
-                        <span>{msg.text}</span>
-                        <span className="text-[10px] text-slate-400 self-end mt-1 font-mono">
-                          {msg.time}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                        {cryptoSwapped ? '⚡ Switch to Online' : '📶 Simulate Disconnect (Go Offline)'}
+                      </button>
+                    </div>
 
-                  {/* Send input */}
-                  <form onSubmit={handleSendMessage} className="flex gap-2">
-                    <input
-                      type="text"
-                      value={inputMessage}
-                      onChange={(e) => setInputMessage(e.target.value)}
-                      placeholder="Type a message to test WebSocket sync..."
-                      className="flex-1 px-4 py-2.5 rounded-xl bg-slate-900 border border-sky-500/20 text-white text-xs focus:outline-none focus:border-sky-400"
-                    />
-                    <button
-                      type="submit"
-                      className="px-4 py-2.5 rounded-xl bg-sky-500 text-slate-950 font-bold text-xs hover:brightness-110 flex items-center gap-1.5 cursor-pointer"
-                    >
-                      <span>Send</span>
-                      <Send className="w-3.5 h-3.5" />
-                    </button>
-                  </form>
+                    <div className="p-3.5 rounded-xl bg-slate-950 border border-sky-500/20 text-xs text-slate-300 flex flex-col gap-1.5">
+                      <div className="flex justify-between font-mono text-[11px] text-slate-400">
+                        <span>Local SQLite Store</span>
+                        <span>REST API Sync Queue: {cryptoSwapped ? '4 pending records' : '0 pending'}</span>
+                      </div>
+                      <p className="text-[11px] text-slate-400">
+                        When internet connectivity drops, transactions and field logs are immediately queued in local storage and batch-reconciled when reconnection occurs.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

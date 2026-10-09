@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { ProfileData, NavLink } from '../types/portfolio';
-import { Menu, X, User, ExternalLink, GitBranch, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   profile: ProfileData;
   navLinks: NavLink[];
   onOpenHireMe: () => void;
   onOpenProfile: () => void;
-  onOpenGitModal: () => void;
-  onOpenDataEditor: () => void;
+  onOpenGitModal?: () => void;
+  onOpenDataEditor?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -60,7 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
-        {/* Brand & Status */}
+        {/* Brand */}
         <div className="flex items-center gap-4">
           <a
             href="#"
@@ -68,10 +68,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             {profile.brand}
           </a>
-          <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/60 border border-sky-500/20 text-xs text-sky-300 select-none shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse shadow-[0_0_8px_#7dd3fc]"></span>
-            <span className="font-medium">{profile.status}</span>
-          </div>
         </div>
 
         {/* Desktop Nav Links */}
@@ -99,26 +95,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls */}
         <div className="flex items-center gap-3">
-          {/* Git repo indicator button */}
-          <button
-            onClick={onOpenGitModal}
-            title="GitHub Repository & Sync instructions"
-            className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900/60 hover:bg-slate-900/90 text-xs font-medium text-slate-300 hover:text-sky-300 border border-sky-500/20 transition-all cursor-pointer"
-          >
-            <GitBranch className="w-3.5 h-3.5 text-sky-400" />
-            <span className="font-mono">my-portfolio</span>
-          </button>
-
-          {/* JSON Data inspect button */}
-          <button
-            onClick={onOpenDataEditor}
-            title="Inspect / Edit Dynamic JSON Data"
-            className="hidden lg:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900/40 hover:bg-slate-900/70 text-xs font-mono text-slate-400 hover:text-slate-200 border border-slate-700/40 transition-all cursor-pointer"
-          >
-            <span>{'{ }'}</span>
-            <span className="text-[11px]">JSON Data</span>
-          </button>
-
           {/* Hire Me CTA */}
           <button
             onClick={onOpenHireMe}
@@ -153,9 +129,6 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="md:hidden px-6 pt-4 pb-6 bg-[#0a0f18]/95 backdrop-blur-3xl border-b border-sky-500/20 flex flex-col gap-3 mt-4 animate-in slide-in-from-top-4 duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800">
             <span className="text-xs uppercase tracking-widest text-slate-400 font-medium">Navigation</span>
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">
-              {profile.status}
-            </span>
           </div>
           {navLinks.map((link) => (
             <a
@@ -167,27 +140,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               {link.label}
             </a>
           ))}
-          <div className="pt-3 border-t border-slate-800 flex flex-col gap-2.5">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenGitModal();
-              }}
-              className="w-full py-2.5 px-3 rounded-xl bg-slate-900/80 border border-sky-500/20 text-slate-200 text-sm flex items-center justify-center gap-2"
-            >
-              <GitBranch className="w-4 h-4 text-sky-400" />
-              <span>Git Repo &amp; Push Instructions</span>
-            </button>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenDataEditor();
-              }}
-              className="w-full py-2.5 px-3 rounded-xl bg-slate-900/80 border border-slate-700/40 text-slate-300 text-sm flex items-center justify-center gap-2"
-            >
-              <span>{'{ }'} Inspect / Edit JSON Data</span>
-            </button>
-          </div>
         </div>
       )}
     </header>

@@ -26,25 +26,74 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
   };
 
   const handleDownloadResume = () => {
-    // Generate simple readable resume markdown/text download
-    const resumeText = `# ${profile.name} - ${profile.role}
-Email: ${profile.email} | Phone: ${profile.phone} | GitHub: ${profile.github}
-Location: ${profile.location}
+    // Generate complete readable resume markdown/text download
+    const resumeText = `# ${profile.fullName || profile.name}
+**${profile.role}**
+Location: ${profile.location} | Phone: ${profile.phone} | Email: ${profile.email}
+GitHub: ${profile.github}
 
-## Summary
+---
+
+## PROFESSIONAL SUMMARY
 ${profile.bioSummary}
 
-## Core Stack
-${profile.coreStack.map((s) => `- ${s.name}`).join('\n')}
+---
 
-## Expertise
-Specializing in cross-platform mobile apps (React Native, iOS, Android), high-performance web applications (Next.js, React), and robust state management.
+## CORE TECHNICAL SKILLS
+- **Frontend:** ReactJS, Next.js, React Native, Flutter, TypeScript, JavaScript, Vue.js
+- **UI / Styling:** Tailwind CSS, Bootstrap, jQuery, HTML5, CSS3, Responsive Design, Figma-to-Code
+- **Data / Auth:** Firebase Auth, Firestore, REST API integration, JSON Server, Postman, Swagger
+- **Tools:** Git, GitHub, Jira, VS Code, Android Studio, Xcode, Cursor, Vercel, Firebase Hosting
+
+---
+
+## PROFESSIONAL EXPERIENCE
+
+### Front-End Developer | Reva Infosoft Pvt. Ltd.
+*2+ Years (Present) • Ahmedabad, India*
+- Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter.
+- Built custom, reusable UI components and responsive layouts using Tailwind CSS and native UI frameworks.
+- Converted Figma designs into pixel-accurate frontend implementations.
+- Integrated Firebase services including Authentication (Email/Password, Google Sign-In, OTP verification), Firestore, and Hosting.
+- Worked with JSON Server for mock APIs; tested APIs using Postman and documented APIs with Swagger.
+- Implemented application routing using React Navigation and Flutter Navigator.
+- Deployed web applications through Vercel/Firebase Hosting and mobile applications to Google Play Store.
+- Used Git/GitHub for version control and collaborated with Agile teams through Jira.
+
+### ReactJS Developer — Internship | Tops Technologies Pvt. Ltd.
+*6 Months (Mar 2023 – Aug 2023) • Ahmedabad, India*
+- Developed ReactJS interfaces with Redux and RESTful API integration.
+- Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS.
+- Used Bootstrap for responsive, mobile-friendly layouts and jQuery for DOM manipulation and event handling.
+
+### Production Engineer — Non-Tech | PCB Manufacturer
+*11 Years • Gandhinagar, India*
+- Worked in a PCB manufacturing company as a Production Engineer before pivoting into software engineering.
+
+---
+
+## SELECTED PROJECTS
+- **Huzzle App (Android & iOS):** React Native mobile application with custom UI components, React Navigation, Firebase, and Play Store deployment.
+- **Aeon Pass — Multi-App Suite (Mobile + Web):** Guest and Gatekeeper apps built with React Native (Expo) and Web Admin Panel built with Next.js and Tailwind CSS.
+- **Orange App (Android):** Flutter application featuring offline data synchronization and low-bandwidth optimization.
+
+---
+
+## EDUCATION
+- **Front-end Developer Certificate Course:** Tops Technologies Pvt. Ltd. (Mar 2023 – Aug 2023)
+- **Diploma in Mechanical Engineering:** S.K. University, Visnagar (Jun 2006 – Oct 2010)
+- **SSC (GSEB):** S.S.S.H, Vihar (Jun 2005 – Jun 2006)
+
+---
+
+## LANGUAGES
+- Gujarati (Native) • Hindi (Intermediate) • English (Intermediate)
 `;
     const blob = new Blob([resumeText], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Vijay_Resume_Frontend_Mobile.md`;
+    a.download = `Vijay_Prajapati_Resume.md`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -73,10 +122,10 @@ Specializing in cross-platform mobile apps (React Native, iOS, Android), high-pe
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-xl font-bold text-white">{profile.name}</h3>
+                <h3 className="text-xl font-bold text-white">{profile.fullName || profile.name}</h3>
                 <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
               </div>
-              <p className="text-xs text-sky-300 font-mono mt-0.5">@{profile.handle}</p>
+              <p className="text-xs text-sky-300 font-mono mt-0.5">@{profile.handle} &bull; {profile.phone}</p>
               <div className="text-xs text-slate-300 mt-1">{profile.title}</div>
             </div>
           </div>

@@ -1,22 +1,30 @@
 {
   "profile": {
     "name": "Vijay",
+    "fullName": "Vijay Prajapati",
     "handle": "vjy2080",
     "brand": "VIJAY.DEV",
-    "role": "Frontend & Mobile Developer",
-    "title": "Frontend & Mobile Engineer",
+    "role": "Frontend Developer",
+    "title": "Frontend Developer (ReactJS · React Native · Flutter)",
     "status": "Available for Opportunities",
-    "location": "AVAILABLE WORLDWIDE",
-    "email": "vijay@dev-portfolio.io",
+    "location": "Gandhinagar, Gujarat, India",
+    "email": "vjy2080@gmail.com",
     "userEmail": "vjy2080@gmail.com",
-    "phone": "+1 (555) 208-2080",
+    "phone": "+91 9998517185",
     "github": "https://github.com/vjy2080",
-    "githubRepo": "https://github.com/vjy2080/my-portfolio.git",
+    "githubRepo": "https://github.com/vjy2080/Vijay-Portfolio.git",
     "linkedin": "https://linkedin.com",
-    "bioHeadline": "Hi, I'm Vijay. Building High-Performance Cross-Platform Apps.",
-    "bioSummary": "Crafting exceptional web and mobile experiences with React.js, React Native, TypeScript, and JavaScript. Turning complex requirements into fluid, user-centric interfaces.",
-    "cardDescription": "Specializing in cross-platform mobile apps, high-performance web applications, and robust state management.",
+    "bioHeadline": "Hi, I'm Vijay Prajapati. Building High-Performance Web & Mobile Apps.",
+    "bioSummary": "Frontend Developer with 2+ years of professional experience building production web and mobile applications using ReactJS, Next.js, React Native, and Flutter. Experienced in reusable UI development, responsive interfaces, Figma-to-code implementation, Firebase integration, authentication, API integration, mobile deployment, and Agile collaboration.",
+    "cardDescription": "Frontend Developer specializing in ReactJS, React Native & Flutter with 2+ years of production experience in cross-platform mobile apps, Next.js web applications, and Firebase.",
     "coreStack": [
+      {
+        "id": "react",
+        "name": "ReactJS",
+        "icon": "code",
+        "lucide": "Code2",
+        "accent": "sky"
+      },
       {
         "id": "rn",
         "name": "React Native",
@@ -25,98 +33,104 @@
         "accent": "sky"
       },
       {
-        "id": "react",
-        "name": "React.js",
-        "icon": "code",
-        "lucide": "Code2",
-        "accent": "sky"
-      },
-      {
-        "id": "ts",
-        "name": "TypeScript",
-        "icon": "terminal",
-        "lucide": "Terminal",
+        "id": "flutter",
+        "name": "Flutter",
+        "icon": "devices",
+        "lucide": "Layers",
         "accent": "indigo"
       },
       {
-        "id": "js",
-        "name": "JavaScript",
-        "icon": "javascript",
-        "lucide": "Cpu",
+        "id": "nextjs",
+        "name": "Next.js",
+        "icon": "terminal",
+        "lucide": "Terminal",
         "accent": "sky"
       }
+    ],
+    "languages": [
+      { "name": "Gujarati", "level": "Native" },
+      { "name": "Hindi", "level": "Intermediate" },
+      { "name": "English", "level": "Intermediate" }
     ]
   },
   "projects": [
     {
-      "id": "crypto-wallet",
-      "title": "Cross-Platform Crypto Wallet",
-      "category": "React Native Mobile App",
+      "id": "huzzle-app",
+      "title": "Huzzle App",
+      "category": "Android & iOS Mobile App",
       "badgeColor": "sky",
-      "description": "Secure non-custodial crypto wallet built with React Native and TypeScript, featuring biometric authentication, real-time token swaps, and seamless multi-chain support.",
-      "longDescription": "Engineered from the ground up to provide seamless key management and instant decentralized transactions. Implements biometric auth (FaceID/TouchID), AES-256 encrypted local key storage, and zero-latency WebSocket quote streams across Ethereum, Solana, and Polygon.",
+      "description": "Cross-platform mobile application developed for Android and iOS using React Native. Contributed to core features, custom reusable UI components, and supported deployment on both mobile platforms.",
+      "longDescription": "Production mobile application built with React Native and TypeScript, engineered for seamless performance across both Android and iOS devices. Developed modular UI components from Figma prototypes, implemented smooth screen navigation via React Navigation, integrated backend REST APIs and Firebase services, and supported the deployment lifecycle on Google Play Store and Apple App Store.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAAVzzxHy-nK471SwbZxvTtUXLCuULq6Q6IN8a3_Y2ALQyBqy4vrvgq2D1iwHeuXBjjvsMOQGP_pR7LnXSeDKuDBZ2jHq9wPzVFrz4Rec3Z-_U_A6m_blDc-nQo7lOQrHDm2m8eC00P04b22ovkfSetNxRzc6BsgeyBpWu36iGOugaCspax2uPp4PDa1mBgeBy4KUDdh6RPaFzUGcFq8JEXmQcA1ili67ZdjiW_S1Y8Mr0cewaVti8rmA",
-      "tags": ["React Native", "TypeScript", "Zustand"],
+      "tags": ["React Native", "TypeScript", "React Navigation", "Firebase"],
       "liveUrl": "https://github.com/vjy2080",
       "githubUrl": "https://github.com/vjy2080",
       "highlights": [
-        "Biometric hardware security integration (FaceID / Fingerprint)",
-        "Sub-second multi-chain token swaps with real-time slippage protection",
-        "Offline-first cached balances with optimistic updates",
-        "60 FPS smooth gesture interactions via react-native-reanimated"
+        "Contributed to core product features and custom modular UI components",
+        "Implemented seamless application routing using React Navigation",
+        "Integrated Firebase Authentication and cloud backend services",
+        "Supported deployment to both Google Play Store and iOS App Store"
       ],
       "metrics": {
-        "Rating": "4.9 / 5.0",
-        "Active Users": "120K+",
-        "Response Time": "< 180ms"
+        "Platforms": "Android & iOS",
+        "Stack": "React Native",
+        "Deployment": "Google Play Store"
       }
     },
     {
-      "id": "saas-dashboard",
-      "title": "Enterprise SaaS Dashboard",
-      "category": "Enterprise SaaS Web",
+      "id": "aeon-pass",
+      "title": "Aeon Pass — Multi-App Suite",
+      "category": "Mobile + Web Admin Suite",
       "badgeColor": "indigo",
-      "description": "High-performance analytics dashboard built with Next.js and TypeScript. Features server-side rendering, dynamic charting, and optimized state management for heavy datasets.",
-      "longDescription": "A high-throughput enterprise telemetry and analytics suite processing over 5M events per minute. Built with Next.js App Router, virtualized data tables rendering 100k rows effortlessly, and bespoke SVG chart visualizations.",
+      "description": "Multi-app ecosystem featuring Guest and Gatekeeper mobile apps for secure entry management, paired with a Next.js Web Admin Panel for visitor control and real-time analytics.",
+      "longDescription": "Comprehensive access control solution spanning mobile clients and an enterprise administrative panel. Engineered two specialized mobile applications (Guest App and Gatekeeper App) using React Native (Expo) for visitor pass creation, QR scanning, and OTP verification. Built the Next.js Web Admin Panel with Tailwind CSS for security administrators to oversee real-time facility check-ins, visitor logs, and permissions.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA22c8itEID61Nzi3uIVrWf1SM4cPB2Y8W764ahvBFgp0FDW05K34bUofSQfkAvkj2l6E4ARLivX54TP8KFDWhMhtOiQx88UX6FGl8d38NGKW4gxIgRw9l6FjreI_bQq3QljYlVF2dDHaFn1HzYQMdwM7skJaK4L_HSHTlBsBX49-LTHNLxiULl5QJlduZurBVU8Bq0z8TddvkoNurEAxwXLhj3eo3Pnn9VsdGfECDckYlwX4zaY1QXXg",
-      "tags": ["Next.js", "TypeScript", "Tailwind"],
+      "tags": ["React Native (Expo)", "Next.js", "Tailwind CSS", "Firebase"],
       "liveUrl": "https://github.com/vjy2080",
       "githubUrl": "https://github.com/vjy2080",
       "highlights": [
-        "Server-Side Rendering & Incremental Static Regeneration",
-        "Interactive time-series canvas and SVG visualizers",
-        "Custom theme engine with Glacier dark mode and high contrast",
-        "Full keyboard accessibility and WCAG AA compliance"
+        "Built Guest and Gatekeeper dual mobile apps focused on secure entry management",
+        "Engineered the responsive Next.js Web Admin Panel with admin controls and analytics",
+        "Implemented Firebase Auth with Email/Password and OTP verification flows",
+        "Designed pixel-accurate responsive interfaces directly from Figma specifications"
       ],
       "metrics": {
-        "PageSpeed": "99 / 100",
-        "Throughput": "5M+ events/min",
-        "Bundle Size": "42kB init"
+        "Apps Built": "Guest, Gatekeeper, Admin",
+        "Frontend": "Next.js + Expo",
+        "Database": "Firebase Firestore"
       }
     },
     {
-      "id": "chat-collab",
-      "title": "Real-time Chat & Collab App",
-      "category": "iOS / Android App",
+      "id": "orange-app",
+      "title": "Orange App",
+      "category": "Android Mobile App (Flutter)",
       "badgeColor": "sky",
-      "description": "Cross-platform messaging and workspace collaboration tool built using React Native and WebSockets for instant synchronization across iOS and Android devices.",
-      "longDescription": "Unified enterprise messaging client supporting end-to-end encryption, threaded discussions, live markdown preview, and offline voice memos. Synchronized seamlessly via low-latency WebSocket connection with local SQLite cache.",
+      "description": "Android application built with Flutter featuring offline data synchronization, optimized for seamless operation in low-connectivity environments.",
+      "longDescription": "Robust Android client engineered with Flutter and Dart, specifically designed to function reliably in field scenarios with intermittent or zero internet connectivity. Implemented offline local caching mechanisms, automatic sync on network restoration, fluid screen transitions with Flutter Navigator, and robust RESTful API integration.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBigrg11BFqgMRSeWaxFFJ1OCb5TXu8F_cAcMi2gqva1YxWNoL_xa3on0NnzMpi2sXSACLNYUAW-0rVKqg-X57mI6aXN0deOuqAnO75j8ygYwa2ALgLgNoAXWNb9hsb1YM3Vq30Mb9va9ntj_kzg_sirw2nC7Ap56SyxytlCJNo8AWXAr-7mikAwsH5Czsibc9lZF5vBfjmP9u_MJ6aXfO811oQbvhaDiaSCqOtTlmQF4ckz9BYNCadVw",
-      "tags": ["React Native", "WebSockets", "Redux"],
+      "tags": ["Flutter", "Dart", "Offline Sync", "REST APIs"],
       "liveUrl": "https://github.com/vjy2080",
       "githubUrl": "https://github.com/vjy2080",
       "highlights": [
-        "Sub-50ms message round-trip latency via persistent WebSockets",
-        "Offline message queuing with auto-reconnect reconciliation",
-        "Native push notifications for iOS and Android",
-        "Media compression pipeline for fluid sharing"
+        "Offline-first data synchronization engine for low-connectivity environments",
+        "Clean, responsive UI developed with Flutter native Material widgets",
+        "Screen routing and workflow navigation via Flutter Navigator",
+        "REST API data consumption, serialization, and error handling"
       ],
       "metrics": {
-        "Sync Latency": "< 45ms",
-        "Coverage": "iOS + Android",
-        "Crash-Free": "99.98%"
+        "Platform": "Android",
+        "Tech": "Flutter / Dart",
+        "Feature": "Offline Synchronization"
       }
     }
+  ],
+  "academicProjects": [
+    "Gyansutra (Full-Fledge App)",
+    "Swift-shop (E-Commerce Web)",
+    "Bike-Vista (Vehicle Showcase)",
+    "Live-News App (Real-time Aggregator)",
+    "Weather App (Live Forecasts)",
+    "Developer Portfolio (React & Tailwind)"
   ],
   "skills": [
     {
@@ -126,92 +140,123 @@
       "icon": "phone_iphone",
       "accent": "sky",
       "skills": [
-        { "name": "React.js", "percentage": 98, "experience": "6+ yrs", "specialty": "Next.js, Hooks, Suspense" },
-        { "name": "React Native", "percentage": 95, "experience": "5+ yrs", "specialty": "Expo, Native Bridges, Reanimated" },
-        { "name": "TypeScript", "percentage": 96, "experience": "5+ yrs", "specialty": "Strict Typing, Generics, AST" },
-        { "name": "JavaScript (ES6+)", "percentage": 99, "experience": "7+ yrs", "specialty": "Event Loop, Async, Web Workers" }
+        { "name": "ReactJS & Next.js", "percentage": 96, "experience": "2+ yrs", "specialty": "Next.js, Hooks, State, Component Architecture" },
+        { "name": "React Native", "percentage": 94, "experience": "2+ yrs", "specialty": "Expo, React Navigation, Mobile UI, Play Store" },
+        { "name": "Flutter & Dart", "percentage": 90, "experience": "2+ yrs", "specialty": "Flutter Navigator, Offline Sync, Android" },
+        { "name": "TypeScript & JS", "percentage": 95, "experience": "2+ yrs", "specialty": "ES6+, Async/Await, Strict Typing, Vue.js" }
       ]
     },
     {
-      "id": "design-styling",
-      "title": "Design & Styling",
-      "subtitle": "Tailwind & UI Architecture",
+      "id": "ui-styling",
+      "title": "UI / Styling & Design",
+      "subtitle": "Tailwind & Figma Implementation",
       "icon": "palette",
       "accent": "indigo",
       "skills": [
-        { "name": "Tailwind CSS", "percentage": 98, "experience": "5+ yrs", "specialty": "Design Tokens, JIT, Glassmorphism" },
-        { "name": "Component Systems", "percentage": 95, "experience": "5+ yrs", "specialty": "Atomic Systems, Storybook, A11y" },
-        { "name": "Responsive Layouts", "percentage": 97, "experience": "6+ yrs", "specialty": "Fluid Typography, Container Queries" },
-        { "name": "UI/UX Polish", "percentage": 92, "experience": "6+ yrs", "specialty": "Micro-interactions, 60fps Motion" }
+        { "name": "Tailwind CSS", "percentage": 96, "experience": "2+ yrs", "specialty": "Responsive Layouts, Glassmorphism, JIT" },
+        { "name": "Figma-to-Code", "percentage": 98, "experience": "2+ yrs", "specialty": "Pixel-accurate conversion, UI Components" },
+        { "name": "Responsive Design", "percentage": 96, "experience": "2+ yrs", "specialty": "Mobile-first, Flexbox, CSS Grid, Media Queries" },
+        { "name": "Bootstrap & HTML/CSS", "percentage": 92, "experience": "2+ yrs", "specialty": "jQuery, Semantic HTML5, CSS3, DOM Handling" }
       ]
     },
     {
-      "id": "state-architecture",
-      "title": "State & Architecture",
-      "subtitle": "Global State & Scalability",
+      "id": "data-tools",
+      "title": "Data, Auth & Tooling",
+      "subtitle": "Firebase & Agile Deployment",
       "icon": "account_tree",
       "accent": "sky",
       "skills": [
-        { "name": "Redux / Zustand", "percentage": 96, "experience": "5+ yrs", "specialty": "RTK Query, Slices, Middleware" },
-        { "name": "State Management", "percentage": 95, "experience": "6+ yrs", "specialty": "Optimistic UI, Normalization, Cache" },
-        { "name": "Cross-Platform Architecture", "percentage": 94, "experience": "5+ yrs", "specialty": "Monorepos, Code Sharing, Modules" },
-        { "name": "Performance Optimization", "percentage": 93, "experience": "6+ yrs", "specialty": "Profiling, Memory Leaks, LCP/CLS" }
+        { "name": "Firebase (Auth/Firestore)", "percentage": 94, "experience": "2+ yrs", "specialty": "Google Sign-In, OTP, Firestore, Hosting" },
+        { "name": "REST API & Swagger", "percentage": 95, "experience": "2+ yrs", "specialty": "Postman, JSON Server, API Integration" },
+        { "name": "Git & GitHub", "percentage": 94, "experience": "2+ yrs", "specialty": "Version Control, Pull Requests, Agile/Jira" },
+        { "name": "IDE & Deployment", "percentage": 92, "experience": "2+ yrs", "specialty": "VS Code, Android Studio, Xcode, Vercel" }
       ]
     }
   ],
   "experiences": [
     {
       "id": "exp-1",
-      "role": "Senior Frontend & Mobile Developer",
-      "company": "Stellar Technologies Inc.",
-      "location": "Remote",
-      "period": "2022 - Present",
+      "role": "Front-End Developer",
+      "company": "Reva Infosoft Pvt. Ltd.",
+      "location": "Ahmedabad, India",
+      "period": "2+ Years (Present)",
       "badgeColor": "sky",
       "dotColor": "sky",
-      "description": "Leading cross-platform mobile and web frontend development using React Native, React.js, and TypeScript. Architected modular design systems and optimized rendering performance across iOS, Android, and web clients.",
+      "description": "Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter. Built custom, reusable UI components and responsive layouts using Tailwind CSS and native UI frameworks.",
       "achievements": [
-        "Spearheaded redesign of flagship mobile app serving 200k+ monthly active users",
-        "Reduced application bundle size by 35% and cut mobile app launch latency by 48%",
-        "Mentored a distributed engineering squad of 6 frontend and mobile developers"
+        "Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter",
+        "Built custom, reusable UI components and responsive layouts using Tailwind CSS and native UI frameworks",
+        "Converted Figma designs into pixel-accurate frontend implementations",
+        "Integrated Firebase services including Authentication (Email/Password, Google Sign-In, OTP verification), Firestore, and Hosting",
+        "Worked with JSON Server for mock APIs; tested APIs using Postman and documented APIs with Swagger",
+        "Implemented application routing using React Navigation and Flutter Navigator",
+        "Deployed web applications through Vercel/Firebase Hosting and mobile applications to Google Play Store",
+        "Used Git/GitHub for version control and collaborated with Agile teams through Jira"
       ]
     },
     {
       "id": "exp-2",
-      "role": "Frontend Engineer",
-      "company": "Vanguard Digital Labs",
-      "location": "Austin, TX",
-      "period": "2020 - 2022",
+      "role": "ReactJS Developer — Internship",
+      "company": "Tops Technologies Pvt. Ltd.",
+      "location": "Ahmedabad, India",
+      "period": "6 Months (Mar 2023 – Aug 2023)",
       "badgeColor": "indigo",
       "dotColor": "indigo",
-      "description": "Developed responsive web applications and dynamic mobile interfaces with React.js and React Native. Implemented robust state management architectures with Redux and Zustand.",
+      "description": "Developed ReactJS interfaces with Redux and RESTful API integration. Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS.",
       "achievements": [
-        "Engineered high-throughput enterprise SaaS analytics dashboards with Next.js",
-        "Standardized design token architecture across iOS and web client applications",
-        "Authored reusable UI component library adopted across 4 major products"
+        "Developed ReactJS interfaces with Redux and RESTful API integration",
+        "Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS",
+        "Used Bootstrap for responsive, mobile-friendly layouts and jQuery for DOM manipulation and event handling"
       ]
     },
     {
       "id": "exp-3",
-      "role": "UI / JavaScript Developer",
-      "company": "Apex Interactive",
-      "location": "New York, NY",
-      "period": "2018 - 2020",
+      "role": "Production Engineer — Non-Tech",
+      "company": "PCB Manufacturer",
+      "location": "Gandhinagar, India",
+      "period": "11 Years",
       "badgeColor": "sky",
       "dotColor": "sky",
-      "description": "Built interactive single-page applications using modern JavaScript and TypeScript. Focused on high-performance animations, fluid UI layouts, and cross-browser compatibility.",
+      "description": "Worked in a PCB manufacturing company as a Production Engineer, managing precision fabrication processes, workflow optimization, and quality assurance before pivoting full-time into software engineering.",
       "achievements": [
-        "Developed high-conversion single page applications and fluid landing experiences",
-        "Implemented complex SVG animations and CSS micro-interactions",
-        "Maintained 99.8% cross-browser compatibility and regression testing"
+        "Managed precision engineering operations, quality control, and production scheduling",
+        "Demonstrated systematic problem-solving and analytical discipline across 11 years of engineering operations"
       ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "Front-end Developer Certificate Course",
+      "institution": "Tops Technologies Pvt. Ltd.",
+      "period": "Mar 2023 – Aug 2023",
+      "location": "Ahmedabad, India",
+      "highlight": "Hands-on specialization in ReactJS, Redux, modern JavaScript, and responsive UI development"
+    },
+    {
+      "id": "edu-2",
+      "degree": "Diploma in Mechanical Engineering",
+      "institution": "S.K. University, Visnagar",
+      "period": "Jun 2006 – Oct 2010",
+      "location": "Visnagar, Gujarat, India",
+      "highlight": "Core engineering principles, mathematics, and analytical problem-solving foundation"
+    },
+    {
+      "id": "edu-3",
+      "degree": "SSC (GSEB)",
+      "institution": "S.S.S.H, Vihar",
+      "period": "Jun 2005 – Jun 2006",
+      "location": "Gujarat, India",
+      "highlight": "Secondary School Certificate"
     }
   ],
   "contact": {
     "kicker": "GET IN TOUCH",
     "headline": "Let's build something extraordinary together.",
-    "description": "Whether you have a web/mobile project in mind, a frontend role to fill, or just want to connect, my inbox is always open.",
-    "directEmail": "vijay@dev-portfolio.io",
-    "phone": "+1 (555) 208-2080",
+    "description": "Looking for a dedicated Frontend Developer proficient in ReactJS, React Native, and Flutter? Feel free to reach out directly via email, phone, or message.",
+    "directEmail": "vjy2080@gmail.com",
+    "phone": "+91 9998517185",
+    "location": "Gandhinagar, Gujarat, India",
     "github": "github.com/vjy2080",
     "githubUrl": "https://github.com/vjy2080",
     "repoUrl": "https://github.com/vjy2080/my-portfolio.git"
@@ -221,11 +266,12 @@
     { "label": "Projects", "href": "#projects" },
     { "label": "Skills", "href": "#skills" },
     { "label": "Experience", "href": "#experience" },
+    { "label": "Education", "href": "#education" },
     { "label": "Contact", "href": "#contact" }
   ],
   "socials": [
     { "name": "GitHub", "url": "https://github.com/vjy2080" },
-    { "name": "LinkedIn", "url": "https://linkedin.com" },
-    { "name": "Email", "url": "mailto:vijay@dev-portfolio.io" }
+    { "name": "Email", "url": "mailto:vjy2080@gmail.com" },
+    { "name": "Phone", "url": "tel:+919998517185" }
   ]
 }

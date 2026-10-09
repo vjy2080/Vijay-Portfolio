@@ -18,19 +18,19 @@ export const GitSyncModal: React.FC<GitSyncModalProps> = ({
 
   const commandSteps = [
     {
-      title: 'Full Push Sequence (Terminal)',
-      command: `git init\ngit add .\ngit commit -m "feat: complete Vijay developer portfolio with Glacier glassmorphism and dynamic JSON data"\ngit branch -M main\ngit remote add origin ${repoUrl}\ngit push -u origin main`,
-      note: 'Run this in your project terminal to push all code directly to your GitHub repository.',
+      title: '1. Push to "development" Branch (Terminal)',
+      command: `git checkout -b development\ngit add .\ngit commit -m "fix: resolve Vercel esbuild peer dependency conflict with .npmrc"\ngit push -u origin development`,
+      note: 'Creates and pushes all code to the new development branch on github.com/vjy2080/Vijay-Portfolio.',
     },
     {
-      title: 'Pushing Existing Git Setup',
-      command: `git remote set-url origin ${repoUrl}\ngit branch -M main\ngit push -u origin main`,
-      note: 'If git is already initialized, use this quick command.',
+      title: '2. Push directly using GitHub Personal Access Token (PAT)',
+      command: `git push https://<YOUR_GITHUB_TOKEN>@github.com/vjy2080/Vijay-Portfolio.git development`,
+      note: 'Use this if your terminal prompts for GitHub authentication (Settings > Developer settings > Personal access tokens).',
     },
     {
-      title: 'Pushing via GitHub Personal Access Token (PAT)',
-      command: `git push https://<YOUR_GITHUB_TOKEN>@github.com/vjy2080/my-portfolio.git main`,
-      note: 'If GitHub prompts for authentication, replace <YOUR_GITHUB_TOKEN> with your GitHub token (Settings > Developer settings > Personal access tokens).',
+      title: '3. Push to "main" Branch',
+      command: `git checkout main\ngit merge development\ngit push origin main`,
+      note: 'Merges the verified build fixes into your production main branch.',
     },
   ];
 

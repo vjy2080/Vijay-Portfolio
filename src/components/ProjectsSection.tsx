@@ -5,11 +5,13 @@ import { Sparkles, Layers } from 'lucide-react';
 
 interface ProjectsSectionProps {
   projects: ProjectItem[];
+  academicProjects?: string[];
   onSelectProject: (project: ProjectItem) => void;
 }
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   projects,
+  academicProjects = [],
   onSelectProject,
 }) => {
   const [filter, setFilter] = useState<'all' | 'mobile' | 'web'>('all');
@@ -20,11 +22,16 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       return (
         project.category.toLowerCase().includes('mobile') ||
         project.category.toLowerCase().includes('ios') ||
-        project.category.toLowerCase().includes('android')
+        project.category.toLowerCase().includes('android') ||
+        project.category.toLowerCase().includes('flutter')
       );
     }
     if (filter === 'web') {
-      return project.category.toLowerCase().includes('web') || project.tags.includes('Next.js');
+      return (
+        project.category.toLowerCase().includes('web') ||
+        project.tags.includes('Next.js') ||
+        project.category.toLowerCase().includes('suite')
+      );
     }
     return true;
   });
@@ -81,12 +88,12 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
-                Web &amp; SaaS
+                Web &amp; Admin Suite
               </button>
             </div>
 
             <p className="text-slate-300 max-w-md text-sm md:text-base leading-relaxed font-light">
-              A curated selection of mobile &amp; web applications engineered with extreme performance, offline-first capabilities, and fluid interactions.
+              Production mobile and web applications built with React Native, Next.js, and Flutter. Featuring offline synchronization, secure Firebase auth, and pixel-accurate UI.
             </p>
           </div>
         </div>
@@ -101,6 +108,42 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
             />
           ))}
         </div>
+
+        {/* Academic & Specialized Projects Strip */}
+        {academicProjects.length > 0 && (
+          <div className="pt-8 border-t border-sky-500/10 flex flex-col gap-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-xs uppercase tracking-widest text-sky-400 font-semibold">
+                  Academic &amp; Showcase Builds
+                </span>
+                <h3 className="text-xl font-bold text-white mt-1">
+                  Additional Built Applications
+                </h3>
+              </div>
+              <span className="text-xs text-slate-400 font-mono hidden sm:inline">
+                {academicProjects.length} Projects
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {academicProjects.map((proj, idx) => (
+                <div
+                  key={idx}
+                  className="p-3.5 rounded-2xl bg-slate-900/40 border border-sky-500/15 hover:border-sky-400/40 hover:bg-slate-900/70 transition-all flex flex-col justify-between gap-2 group"
+                >
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-sky-300 transition-colors">
+                    {proj}
+                  </span>
+                  <div className="flex items-center justify-between text-[11px] text-slate-500 font-mono">
+                    <span>Build #{idx + 1}</span>
+                    <span className="text-sky-400/80">→</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

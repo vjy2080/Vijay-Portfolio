@@ -61,6 +61,7 @@ export default function App() {
         {/* Featured Projects Grid */}
         <ProjectsSection
           projects={data.projects}
+          academicProjects={data.academicProjects}
           onSelectProject={(project) => setSelectedProject(project)}
         />
 
@@ -68,7 +69,11 @@ export default function App() {
         <SkillsSection categories={data.skills} />
 
         {/* Career Experience Timeline */}
-        <ExperienceSection experiences={data.experiences} />
+        <ExperienceSection
+          experiences={data.experiences}
+          education={data.education}
+          languages={data.profile.languages}
+        />
 
         {/* Get in Touch / Contact Section */}
         <ContactSection contact={data.contact} />

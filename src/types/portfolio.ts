@@ -8,6 +8,7 @@ export interface CoreStackItem {
 
 export interface ProfileData {
   name: string;
+  fullName: string;
   handle: string;
   brand: string;
   role: string;
@@ -24,6 +25,7 @@ export interface ProfileData {
   bioSummary: string;
   cardDescription: string;
   coreStack: CoreStackItem[];
+  languages: Array<{ name: string; level: string }>;
 }
 
 export interface ProjectItem {
@@ -39,6 +41,7 @@ export interface ProjectItem {
   githubUrl: string;
   highlights: string[];
   metrics: Record<string, any>;
+  isAcademic?: boolean;
 }
 
 export interface SkillItem {
@@ -69,12 +72,22 @@ export interface ExperienceItem {
   achievements: string[];
 }
 
+export interface EducationItem {
+  id: string;
+  degree: string;
+  institution: string;
+  period: string;
+  location?: string;
+  highlight?: string;
+}
+
 export interface ContactData {
   kicker: string;
   headline: string;
   description: string;
   directEmail: string;
   phone: string;
+  location: string;
   github: string;
   githubUrl: string;
   repoUrl: string;
@@ -93,8 +106,10 @@ export interface SocialLink {
 export interface PortfolioData {
   profile: ProfileData;
   projects: ProjectItem[];
+  academicProjects: string[];
   skills: SkillCategory[];
   experiences: ExperienceItem[];
+  education: EducationItem[];
   contact: ContactData;
   navLinks: NavLink[];
   socials: SocialLink[];

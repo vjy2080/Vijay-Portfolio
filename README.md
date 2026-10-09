@@ -1,88 +1,67 @@
-# VIJAY.DEV — Frontend & Mobile Developer Portfolio
+# VIJAY PRAJAPATI — Frontend Developer Portfolio
 
-A modern, high-performance, responsive portfolio web application crafted with **React 19**, **TypeScript**, and **Tailwind CSS**, designed according to the **Glacier Glassmorphism** aesthetic ("Frozen Light").
+A modern, high-performance, responsive portfolio web application crafted with **React 19**, **TypeScript**, and **Tailwind CSS**, designed with the **Glacier Glassmorphism** aesthetic ("Frozen Light").
 
 All content across the application is driven dynamically from `src/data/portfolioData.json`.
 
 ---
 
-## 🚀 Live Demo & Repository
-- **GitHub Repository**: [https://github.com/vjy2080/my-portfolio.git](https://github.com/vjy2080/my-portfolio.git)
-- **Developer**: Vijay (`vjy2080`)
-- **Focus**: React Native, React.js, Next.js architecture, TypeScript, Cross-Platform Engineering
+## 👤 Developer Profile
+- **Name:** Vijay Prajapati
+- **Role:** Frontend Developer
+- **Specialization:** ReactJS • React Native • Flutter
+- **Location:** Gandhinagar, Gujarat, India
+- **Phone:** +91 9998517185
+- **Email:** vjy2080@gmail.com
+- **GitHub:** [https://github.com/vjy2080](https://github.com/vjy2080)
+- **Repository:** [https://github.com/vjy2080/my-portfolio.git](https://github.com/vjy2080/my-portfolio.git)
 
 ---
 
-## 🎨 Design Philosophy — Glacier Glassmorphism
-- **North Star**: "Frozen Light" — Layered translucent glass surfaces with ice-blue (`#7dd3fc`) accents and deep navy-black (`#0a0f18`) background.
-- **Micro-Interactions**: Ambient radial glow fields, animated status indicators, custom scrollbars, and tactile hover states.
-- **Zero-Pill Static Typography**: Content-first typography hierarchy with balanced headings and accessible contrast.
+## 💼 Professional Experience
+1. **Reva Infosoft Pvt. Ltd.** — Front-End Developer *(2+ Years • Ahmedabad, India)*
+   - Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter.
+   - Converted Figma designs into pixel-accurate frontend implementations.
+   - Integrated Firebase Auth (Email, Google Sign-In, OTP), Firestore, and Hosting.
+   - Deployed web apps via Vercel/Firebase and mobile apps to Google Play Store.
+2. **Tops Technologies Pvt. Ltd.** — ReactJS Developer (Internship) *(6 Months • Ahmedabad, India)*
+   - Developed ReactJS interfaces with Redux and RESTful API integration.
+   - Reusable components and responsive layouts with Bootstrap and jQuery.
+3. **PCB Manufacturer** — Production Engineer (Non-Tech) *(11 Years • Gandhinagar, India)*
+   - 11 years of precision engineering workflow management before pivoting into tech.
 
 ---
 
-## 📁 Key Project Structure
-
-```
-├── src/
-│   ├── components/
-│   │   ├── Navbar.tsx             # Glass navigation with active section indicator & quick actions
-│   │   ├── Hero.tsx               # Atmospheric hero section with core tech badges & profile card
-│   │   ├── ProjectsSection.tsx    # Responsive grid with category filtering (All, Mobile, Web)
-│   │   ├── ProjectCard.tsx        # Glass project card with image preview, tags & action links
-│   │   ├── ProjectModal.tsx       # Interactive architecture breakdown & live simulation playground
-│   │   ├── SkillsSection.tsx      # Interactive Skills Matrix with animated progress & details
-│   │   ├── ExperienceSection.tsx  # Career timeline with gradient connector & expandable achievements
-│   │   ├── ContactSection.tsx     # Direct email/phone cards & interactive messaging form
-│   │   ├── HireMeModal.tsx        # Collaboration proposal & inquiry drawer
-│   │   ├── ProfileModal.tsx       # Quick developer profile snapshot & CV download
-│   │   ├── GitSyncModal.tsx       # GitHub push helper & command guide
-│   │   ├── DataEditorModal.tsx    # Live in-browser JSON data inspector & editor
-│   │   └── Footer.tsx             # Quiet footer with copyright, links, and JSON inspector
-│   ├── data/
-│   │   └── portfolioData.json     # Primary single-source-of-truth for all dynamic content
-│   ├── types/
-│   │   └── portfolio.ts           # Strict TypeScript interfaces
-│   ├── App.tsx                    # Root application component
-│   ├── index.css                  # Tailwind CSS rules & glassmorphism utilities
-│   └── main.tsx                   # React DOM entry point
-├── metadata.json                  # AI Studio applet metadata
-├── index.html                     # HTML5 entry point with Inter font & OpenGraph meta tags
-└── vite.config.ts                 # Vite bundler configuration
-```
+## 📱 Featured Production Projects
+- **Huzzle App (Android & iOS):** Production mobile client built with React Native and TypeScript, featuring custom UI components, React Navigation, and Firebase.
+- **Aeon Pass — Multi-App Suite (Mobile + Web):** Dual mobile apps (Guest and Gatekeeper) built with React Native (Expo) and Web Admin Panel built with Next.js and Tailwind CSS.
+- **Orange App (Android):** Flutter client with offline data synchronization for low-connectivity environments.
+- **Academic & Showcase Builds:** Gyansutra, Swift-shop, Bike-Vista, Live-News App, Weather App, and Developer Portfolio.
 
 ---
 
-## 🛠️ Dynamic Data Customization
-
-All copy, project entries, skills, milestones, and links are stored in `src/data/portfolioData.json`.
-
-You can also use the in-app **JSON Data Controller** (click `{ } JSON Data` in the top navbar or footer) to edit fields in real time with instant previews and download the updated `.json` file.
+## 🎓 Education & Credentials
+- **Tops Technologies Pvt. Ltd.:** Front-end Developer Certificate Course *(Mar 2023 – Aug 2023)*
+- **S.K. University, Visnagar:** Diploma in Mechanical Engineering *(Jun 2006 – Oct 2010)*
+- **S.S.S.H, Vihar:** SSC (GSEB) *(Jun 2005 – Jun 2006)*
 
 ---
 
-## 💻 Pushing to GitHub
+## 💻 Pushing to GitHub (Development Branch)
 
-To push this codebase to your GitHub repository:
+To push this codebase to your `development` branch:
 
 ```bash
-git init
+git checkout -b development
 git add .
-git commit -m "feat: complete Vijay developer portfolio with Glacier glassmorphism and dynamic JSON data"
-git branch -M main
-git remote add origin https://github.com/vjy2080/my-portfolio.git
-git push -u origin main
+git commit -m "fix(build): resolve Vercel esbuild peer conflict and update portfolio"
+git push -u origin development
 ```
 
-If prompted for credentials, use a [GitHub Personal Access Token (PAT)](https://github.com/settings/tokens):
-
+Or using your GitHub Personal Access Token (PAT):
 ```bash
-git push https://<YOUR_GITHUB_TOKEN>@github.com/vjy2080/my-portfolio.git main
+git push https://<YOUR_GITHUB_TOKEN>@github.com/vjy2080/Vijay-Portfolio.git development
 ```
 
----
-
-## 📦 Scripts
-
-- `npm run dev` — Launch the local Vite development server on port 3000
-- `npm run build` — Build production bundle
-- `npm run lint` — Type check codebase with TypeScript
+### ⚡ Note on Vercel Deployment
+The Vercel `ERESOLVE esbuild` issue was caused by an explicit `esbuild@^0.25.0` conflicting with Vite 8's peer requirement. This has been resolved by removing the conflicting devDependency and adding `.npmrc` (`legacy-peer-deps=true`). Vercel builds will now run smoothly without dependency errors!

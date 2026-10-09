@@ -41,11 +41,11 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.12] text-white">
-            Hi, I'm Vijay. Building{' '}
+            Hi, I'm {profile.fullName || "Vijay Prajapati"}. Building{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-sky-400 to-indigo-300 drop-shadow-[0_0_30px_rgba(125,211,252,0.3)]">
               High-Performance
             </span>{' '}
-            Cross-Platform Apps.
+            Web &amp; Mobile Apps.
           </h1>
 
           {/* Lead Paragraph */}
@@ -110,16 +110,16 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="relative z-10 flex flex-col gap-6">
               <div className="flex items-center justify-between">
                 <span className="text-xs uppercase tracking-widest text-sky-400 font-semibold">
-                  Vijay • Dev Profile
+                  {profile.fullName || "Vijay Prajapati"} • Dev Profile
                 </span>
                 <span className="w-3 h-3 rounded-full bg-sky-400 animate-pulse shadow-[0_0_10px_#7dd3fc]"></span>
               </div>
 
               <div>
                 <h3 className="text-2xl font-bold tracking-tight text-white group-hover:text-sky-200 transition-colors">
-                  {profile.title}
+                  {profile.role}
                 </h3>
-                <p className="text-xs text-sky-300/80 mt-1 font-mono">React.js · React Native · TypeScript</p>
+                <p className="text-xs text-sky-300/80 mt-1 font-mono">ReactJS · React Native · Flutter</p>
               </div>
 
               <p className="text-sm text-slate-300 leading-relaxed font-light">
@@ -138,6 +138,10 @@ export const Hero: React.FC<HeroProps> = ({
                 <div className="flex items-center justify-between pt-1">
                   <span>EMAIL:</span>
                   <span className="text-slate-300">{profile.email}</span>
+                </div>
+                <div className="flex items-center justify-between pt-1">
+                  <span>PHONE:</span>
+                  <span className="text-sky-300">{profile.phone}</span>
                 </div>
               </div>
 

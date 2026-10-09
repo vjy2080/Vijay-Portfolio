@@ -113,6 +113,21 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
               </button>
             </div>
 
+            {/* Location Card */}
+            <div className="flex items-center gap-4 p-3 -mx-3 rounded-2xl hover:bg-slate-900/50 transition-colors group">
+              <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:scale-105 group-hover:border-sky-400/40 transition-all shrink-0">
+                <span className="material-symbols-outlined text-[20px]">location_on</span>
+              </div>
+              <div className="flex-1">
+                <div className="text-xs uppercase tracking-widest text-slate-400 font-semibold">
+                  Location
+                </div>
+                <div className="text-sm font-semibold text-white group-hover:text-sky-300 transition-colors">
+                  {contact.location || "Gandhinagar, Gujarat, India"}
+                </div>
+              </div>
+            </div>
+
             {/* GitHub Card */}
             <a
               href={contact.githubUrl}
