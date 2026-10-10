@@ -15,6 +15,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
   // Interactive demo states
   const [cryptoAmount, setCryptoAmount] = useState('1.5');
   const [cryptoSwapped, setCryptoSwapped] = useState(false);
+  const [metalType, setMetalType] = useState<'gold' | 'silver'>('gold');
+  const [investmentAmount, setInvestmentAmount] = useState('5000');
+  const [sipMode, setSipMode] = useState(false);
 
   const [saasMetric, setSaasMetric] = useState<'traffic' | 'latency' | 'throughput'>('traffic');
 
@@ -190,6 +193,123 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           ) : (
             /* Interactive Simulator Tab */
             <div className="p-6 rounded-2xl bg-slate-950/80 border border-sky-500/20 flex flex-col gap-6">
+              {/* Simulator 0: Digital Gold & Silver Fintech Platforms */}
+              {(project.id === 'goldcart-app' ||
+                project.id === 'digi-jewels' ||
+                project.id === 'mayur-jewellers' ||
+                project.id === 'priyadarshi-jewells') && (
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+                    <span className="text-xs uppercase tracking-wider text-amber-400 font-semibold flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-amber-400" />
+                      Live Digital Gold / Silver Trading &amp; SIP Engine
+                    </span>
+                    <span className="text-xs text-emerald-400 font-mono">React Native &bull; Live Market Ticker</span>
+                  </div>
+
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col gap-4">
+                    {/* Metal Toggle */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex gap-2">
+                        <button
+                          type="button"
+                          onClick={() => setMetalType('gold')}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                            metalType === 'gold'
+                              ? 'bg-amber-500 text-slate-950 shadow-[0_0_15px_rgba(245,158,11,0.4)]'
+                              : 'bg-slate-800 text-slate-300 hover:text-white'
+                          }`}
+                        >
+                          24K 999 Pure Gold
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setMetalType('silver')}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                            metalType === 'silver'
+                              ? 'bg-slate-200 text-slate-950 shadow-[0_0_15px_rgba(255,255,255,0.4)]'
+                              : 'bg-slate-800 text-slate-300 hover:text-white'
+                          }`}
+                        >
+                          999 Fine Silver
+                        </button>
+                      </div>
+
+                      <div className="flex items-center gap-2 text-xs font-mono">
+                        <span className="text-slate-400">Live Rate:</span>
+                        <span className="text-emerald-400 font-bold">
+                          {metalType === 'gold' ? '₹7,285.50/g (+0.84%)' : '₹89.20/g (+1.12%)'}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Mode Selector: Quick Buy vs Systematic SIP */}
+                    <div className="p-4 rounded-xl bg-slate-950 border border-amber-500/20 flex flex-col gap-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-slate-300 font-medium">Order Type:</span>
+                        <div className="flex gap-1">
+                          <button
+                            type="button"
+                            onClick={() => setSipMode(false)}
+                            className={`px-2.5 py-1 text-xs rounded-lg font-medium transition-all cursor-pointer ${
+                              !sipMode ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'text-slate-500'
+                            }`}
+                          >
+                            Instant Buy
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setSipMode(true)}
+                            className={`px-2.5 py-1 text-xs rounded-lg font-medium transition-all cursor-pointer ${
+                              sipMode ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'text-slate-500'
+                            }`}
+                          >
+                            Monthly SIP
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-between gap-3 pt-1">
+                        <div className="flex-1 flex flex-col gap-1">
+                          <label className="text-[11px] text-slate-400 font-mono">
+                            {sipMode ? 'SIP Installment (₹)' : 'Investment Amount (₹)'}
+                          </label>
+                          <input
+                            type="number"
+                            value={investmentAmount}
+                            onChange={(e) => setInvestmentAmount(e.target.value)}
+                            className="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm font-bold text-white focus:outline-none focus:border-amber-400"
+                          />
+                        </div>
+
+                        <div className="flex-1 flex flex-col gap-1 text-right">
+                          <span className="text-[11px] text-slate-400 font-mono">Accumulated Weight</span>
+                          <span className="text-base font-extrabold text-amber-300 font-mono">
+                            {metalType === 'gold'
+                              ? (parseFloat(investmentAmount || '0') / 7285.5).toFixed(4)
+                              : (parseFloat(investmentAmount || '0') / 89.2).toFixed(2)}{' '}
+                            grams
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="pt-2 border-t border-slate-900 flex items-center justify-between text-[11px] text-slate-400">
+                        <span className="flex items-center gap-1.5 text-emerald-400">
+                          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                          KYC Tier 2 Verified
+                        </span>
+                        <span>Doorstep Delivery: 100% Insured</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-3 rounded-lg bg-amber-500/10 border border-amber-500/20 text-xs text-amber-200 flex items-center justify-between">
+                    <span>Fintech Engine: Axios &bull; React Query &bull; NativeWind</span>
+                    <span className="font-mono">Google Play &bull; Apple App Store</span>
+                  </div>
+                </div>
+              )}
+
               {/* Simulator 1: Huzzle App */}
               {(project.id === 'huzzle-app' || project.id === 'crypto-wallet') && (
                 <div className="flex flex-col gap-4">
@@ -339,15 +459,19 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
           {/* Action Footer */}
           <div className="pt-4 border-t border-sky-500/20 flex flex-wrap items-center justify-between gap-4">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-sky-500/20 text-slate-200 text-xs font-semibold flex items-center gap-2 transition-colors"
-            >
-              <Github className="w-4 h-4 text-sky-400" />
-              <span>Inspect on GitHub</span>
-            </a>
+            {project.githubUrl ? (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-sky-500/20 text-slate-200 text-xs font-semibold flex items-center gap-2 transition-colors"
+              >
+                <Github className="w-4 h-4 text-sky-400" />
+                <span>Inspect on GitHub</span>
+              </a>
+            ) : (
+              <div />
+            )}
 
             <div className="flex items-center gap-3">
               <button
@@ -356,15 +480,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               >
                 Close Preview
               </button>
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 text-slate-950 font-bold text-xs hover:brightness-110 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(125,211,252,0.3)]"
-              >
-                <span>Live Project View</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 text-slate-950 font-bold text-xs hover:brightness-110 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(125,211,252,0.3)]"
+                >
+                  <span>Live Project View</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              )}
             </div>
           </div>
         </div>

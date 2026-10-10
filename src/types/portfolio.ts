@@ -37,8 +37,8 @@ export interface ProjectItem {
   longDescription: string;
   image: string;
   tags: string[];
-  liveUrl: string;
-  githubUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
   highlights: string[];
   metrics: Record<string, any>;
   isAcademic?: boolean;

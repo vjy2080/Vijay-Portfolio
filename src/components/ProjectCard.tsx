@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectItem } from '../types/portfolio';
-import { ExternalLink, ArrowRight, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface ProjectCardProps {
   project: ProjectItem;
@@ -97,26 +97,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               e.stopPropagation();
               onSelectProject(project);
             }}
-            className={`inline-flex items-center gap-1.5 text-sm font-semibold transition-colors cursor-pointer ${
+            className={`inline-flex items-center gap-1.5 text-sm font-semibold transition-colors cursor-pointer group/btn ${
               isIndigo
                 ? 'text-indigo-300 hover:text-indigo-200'
                 : 'text-sky-400 hover:text-sky-300'
             }`}
           >
-            <span>Live Preview</span>
-            <ExternalLink className="w-4 h-4" />
+            <span>More</span>
+            <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
           </button>
-
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="text-slate-400 hover:text-white text-sm font-medium transition-colors inline-flex items-center gap-1 group/btn"
-          >
-            <span>GitHub</span>
-            <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
-          </a>
         </div>
       </div>
     </div>

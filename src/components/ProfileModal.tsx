@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ProfileData } from '../types/portfolio';
 import { X, ExternalLink, Github, Mail, Phone, MapPin, Copy, Check, Download, FileText } from 'lucide-react';
+import logoImg from '../assets/images/logo.png';
+import resumePdf from '../assets/cv/Vijay_Resume_IT-New.pdf';
 
 interface ProfileModalProps {
   profile: ProfileData;
@@ -26,76 +28,14 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
   };
 
   const handleDownloadResume = () => {
-    // Generate complete readable resume markdown/text download
-    const resumeText = `# ${profile.fullName || profile.name}
-**${profile.role}**
-Location: ${profile.location} | Phone: ${profile.phone} | Email: ${profile.email}
-GitHub: ${profile.github}
-
----
-
-## PROFESSIONAL SUMMARY
-${profile.bioSummary}
-
----
-
-## CORE TECHNICAL SKILLS
-- **Frontend:** ReactJS, Next.js, React Native, Flutter, TypeScript, JavaScript, Vue.js
-- **UI / Styling:** Tailwind CSS, Bootstrap, jQuery, HTML5, CSS3, Responsive Design, Figma-to-Code
-- **Data / Auth:** Firebase Auth, Firestore, REST API integration, JSON Server, Postman, Swagger
-- **Tools:** Git, GitHub, Jira, VS Code, Android Studio, Xcode, Cursor, Vercel, Firebase Hosting
-
----
-
-## PROFESSIONAL EXPERIENCE
-
-### Front-End Developer | Reva Infosoft Pvt. Ltd.
-*2+ Years (Present) • Ahmedabad, India*
-- Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter.
-- Built custom, reusable UI components and responsive layouts using Tailwind CSS and native UI frameworks.
-- Converted Figma designs into pixel-accurate frontend implementations.
-- Integrated Firebase services including Authentication (Email/Password, Google Sign-In, OTP verification), Firestore, and Hosting.
-- Worked with JSON Server for mock APIs; tested APIs using Postman and documented APIs with Swagger.
-- Implemented application routing using React Navigation and Flutter Navigator.
-- Deployed web applications through Vercel/Firebase Hosting and mobile applications to Google Play Store.
-- Used Git/GitHub for version control and collaborated with Agile teams through Jira.
-
-### ReactJS Developer — Internship | Tops Technologies Pvt. Ltd.
-*6 Months (Mar 2023 – Aug 2023) • Ahmedabad, India*
-- Developed ReactJS interfaces with Redux and RESTful API integration.
-- Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS.
-- Used Bootstrap for responsive, mobile-friendly layouts and jQuery for DOM manipulation and event handling.
-
-### Production Engineer — Non-Tech | PCB Manufacturer
-*11 Years • Gandhinagar, India*
-- Worked in a PCB manufacturing company as a Production Engineer before pivoting into software engineering.
-
----
-
-## SELECTED PROJECTS
-- **Huzzle App (Android & iOS):** React Native mobile application with custom UI components, React Navigation, Firebase, and Play Store deployment.
-- **Aeon Pass — Multi-App Suite (Mobile + Web):** Guest and Gatekeeper apps built with React Native (Expo) and Web Admin Panel built with Next.js and Tailwind CSS.
-- **Orange App (Android):** Flutter application featuring offline data synchronization and low-bandwidth optimization.
-
----
-
-## EDUCATION
-- **Front-end Developer Certificate Course:** Tops Technologies Pvt. Ltd. (Mar 2023 – Aug 2023)
-- **Diploma in Mechanical Engineering:** S.K. University, Visnagar (Jun 2006 – Oct 2010)
-- **SSC (GSEB):** S.S.S.H, Vihar (Jun 2005 – Jun 2006)
-
----
-
-## LANGUAGES
-- Gujarati (Native) • Hindi (Intermediate) • English (Intermediate)
-`;
-    const blob = new Blob([resumeText], { type: 'text/markdown' });
-    const url = URL.createObjectURL(blob);
+    // Direct download the official PDF CV
     const a = document.createElement('a');
-    a.href = url;
-    a.download = `Vijay_Prajapati_Resume.md`;
+    a.href = resumePdf;
+    a.download = 'Vijay_Resume_IT.pdf';
+    a.target = '_blank';
+    document.body.appendChild(a);
     a.click();
-    URL.revokeObjectURL(url);
+    document.body.removeChild(a);
   };
 
   return (
@@ -117,8 +57,12 @@ ${profile.bioSummary}
           </button>
 
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-400 to-blue-600 flex items-center justify-center text-slate-950 font-black text-2xl shadow-[0_0_20px_rgba(125,211,252,0.4)]">
-              V
+            <div className="w-16 h-16 rounded-2xl bg-slate-950 p-1 border border-sky-400/40 shadow-[0_0_20px_rgba(56,189,248,0.4)] flex items-center justify-center overflow-hidden shrink-0">
+              <img
+                src={logoImg}
+                alt={profile.fullName || profile.name}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">
