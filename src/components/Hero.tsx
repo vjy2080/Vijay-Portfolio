@@ -40,8 +40,11 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.12] text-white">
-            Hi, I'm {profile.fullName || "Vijay Prajapati"}. Building{' '}
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-[1.12] text-white">
+            Hi, I'm {profile.fullName || "Vijay Prajapati"}.
+          </h1>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-[1.12] text-white">
+            Building{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-sky-400 to-indigo-300 drop-shadow-[0_0_30px_rgba(125,211,252,0.3)]">
               High-Performance
             </span>{' '}
@@ -88,9 +91,8 @@ export const Hero: React.FC<HeroProps> = ({
                 key={tech.id}
                 className="flex items-center gap-2 bg-slate-900/40 backdrop-blur-xl px-4 py-2 rounded-xl border border-sky-500/20 shadow-sm hover:border-sky-400/40 transition-colors"
               >
-                <span className={`material-symbols-outlined text-[16px] ${
-                  tech.accent === 'indigo' ? 'text-indigo-300' : 'text-sky-400'
-                }`}>
+                <span className={`material-symbols-outlined text-[16px] ${tech.accent === 'indigo' ? 'text-indigo-300' : 'text-sky-400'
+                  }`}>
                   {tech.icon}
                 </span>
                 <span className="text-sm font-medium text-slate-200">{tech.name}</span>

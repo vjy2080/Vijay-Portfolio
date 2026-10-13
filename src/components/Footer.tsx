@@ -1,6 +1,7 @@
 import React from 'react';
 import { SocialLink } from '../types/portfolio';
 import { GitBranch, Database } from 'lucide-react';
+import logoImg from '../assets/images/logo.png';
 
 interface FooterProps {
   socials: SocialLink[];
@@ -14,15 +15,23 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenDataEditor,
 }) => {
   return (
-    <footer className="w-full bg-[#060913] py-16 border-t border-sky-500/10 relative">
+    <footer className="w-full bg-[#060913] py-14 border-t border-sky-500/10 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+          <div className="flex items-center gap-3">
+            <img
+              src={logoImg}
+              alt="Vijay Prajapati"
+              className="h-9 w-auto object-contain rounded filter drop-shadow-[0_0_12px_rgba(56,189,248,0.3)]"
+            />
+          </div>
+          <span className="hidden sm:inline text-slate-700">&bull;</span>
           <div className="text-slate-400 text-sm">
-            &copy; 2024 Vijay (vjy2080). All rights reserved.
+            &copy; {new Date().getFullYear()} Vijay Prajapati. All rights reserved.
           </div>
           <span className="hidden sm:inline text-slate-700">&bull;</span>
           <div className="flex items-center gap-3 text-xs text-slate-500 font-mono">
-            <span>React &bull; TypeScript &bull; Tailwind CSS</span>
+            <span>React Native &bull; React &bull; Next.js &bull; Flutter</span>
           </div>
         </div>
 

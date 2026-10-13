@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ProfileData, NavLink } from '../types/portfolio';
 import { Menu, X } from 'lucide-react';
 
+import logoImg from '../assets/images/logo.png';
+
 interface NavbarProps {
   profile: ProfileData;
   navLinks: NavLink[];
@@ -55,18 +57,23 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0a0f18]/85 backdrop-blur-2xl border-b border-sky-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.6)] py-4'
-          : 'bg-[#0a0f18]/60 backdrop-blur-xl border-b border-sky-500/10 shadow-[0_4px_30px_rgba(0,0,0,0.4)] py-6'
+          ? 'bg-[#0a0f18]/85 backdrop-blur-2xl border-b border-sky-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.6)] py-3'
+          : 'bg-[#0a0f18]/60 backdrop-blur-xl border-b border-sky-500/10 shadow-[0_4px_30px_rgba(0,0,0,0.4)] py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
-        {/* Brand */}
+        {/* Brand Logo */}
         <div className="flex items-center gap-4">
           <a
             href="#"
-            className="text-xl font-extrabold tracking-wider text-sky-400 hover:text-sky-300 transition-colors flex items-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-lg"
+            className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-xl py-1"
+            title="Vijay Prajapati Portfolio"
           >
-            {profile.brand}
+            <img
+              src={logoImg}
+              alt="Vijay Prajapati"
+              className="h-10 sm:h-12 w-auto object-contain rounded-lg filter drop-shadow-[0_0_15px_rgba(56,189,248,0.35)] group-hover:scale-105 group-hover:drop-shadow-[0_0_24px_rgba(56,189,248,0.65)] transition-all duration-300"
+            />
           </a>
         </div>
 

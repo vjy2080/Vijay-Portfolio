@@ -3,7 +3,7 @@
     "name": "Vijay",
     "fullName": "Vijay Prajapati",
     "handle": "vjy2080",
-    "brand": "VIJAY.DEV",
+    "brand": "Vijay Prajapati",
     "role": "Frontend Developer",
     "title": "Frontend Developer (ReactJS · React Native · Flutter)",
     "status": "Available for Opportunities",
@@ -15,8 +15,8 @@
     "githubRepo": "https://github.com/vjy2080/Vijay-Portfolio.git",
     "linkedin": "https://linkedin.com",
     "bioHeadline": "Hi, I'm Vijay Prajapati. Building High-Performance Web & Mobile Apps.",
-    "bioSummary": "Frontend Developer with 2+ years of professional experience building production web and mobile applications using ReactJS, Next.js, React Native, and Flutter. Experienced in reusable UI development, responsive interfaces, Figma-to-code implementation, Firebase integration, authentication, API integration, mobile deployment, and Agile collaboration.",
-    "cardDescription": "Frontend Developer specializing in ReactJS, React Native & Flutter with 2+ years of production experience in cross-platform mobile apps, Next.js web applications, and Firebase.",
+    "bioSummary": "Frontend Developer with 2+ years of professional experience building production web and mobile applications using ReactJS, Next.js, React Native and Flutter. Experienced in reusable UI development, responsive interfaces, Figma-to-code implementation, Firebase integration, authentication, API integration, mobile deployment.",
+    "cardDescription": "Frontend Developer specializing in ReactJS, React Native & Flutter with 2+ years of production experience in cross-platform mobile apps, Next.js web applications, and mobile deployments on App Store & Google Play.",
     "coreStack": [
       {
         "id": "react",
@@ -45,15 +45,150 @@
         "icon": "terminal",
         "lucide": "Terminal",
         "accent": "sky"
+      },
+      {
+        "id": "ts",
+        "name": "TypeScript",
+        "icon": "data_object",
+        "lucide": "Code2",
+        "accent": "sky"
       }
     ],
     "languages": [
-      { "name": "Gujarati", "level": "Native" },
-      { "name": "Hindi", "level": "Intermediate" },
-      { "name": "English", "level": "Intermediate" }
+      {
+        "name": "Gujarati",
+        "level": "Native"
+      },
+      {
+        "name": "Hindi",
+        "level": "Intermediate"
+      },
+      {
+        "name": "English",
+        "level": "Intermediate"
+      }
     ]
   },
   "projects": [
+    {
+      "id": "goldcart-app",
+      "title": "GoldCart — Digital Gold & Silver Investment App",
+      "category": "Android & iOS Mobile App",
+      "badgeColor": "amber",
+      "description": "Production-ready mobile application for digital gold and silver investment, featuring live metal prices, buying/selling, portfolio management, SIP/savings plans, KYC, and redemption workflows.",
+      "longDescription": "Developed and deployed a full-fledged cross-platform fintech mobile application engineered for digital gold and silver investments. Features live metal price ticker integrations, instant buy/sell mechanics, systematic investment plan (SIP) recurring savings schemes, comprehensive user portfolio valuation, transaction histories, and seamless KYC verification with doorstep metal redemption delivery.",
+      "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "NativeWind",
+        "Axios",
+        "React Query"
+      ],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Live gold and silver spot price feeds with real-time portfolio valuation",
+        "Automated SIP (Systematic Investment Plans) & recurring savings modules",
+        "Secure end-to-end KYC verification, profile management, and OTP authentication",
+        "Full digital gold/silver buying, selling, and physical bullion redemption workflows",
+        "Deployed and maintained on Google Play Store and Apple App Store"
+      ],
+      "metrics": {
+        "Platforms": "Android & iOS",
+        "Stack": "React Native + Expo",
+        "Specialty": "Fintech & Digital Gold"
+      }
+    },
+    {
+      "id": "digi-jewels",
+      "title": "Digi Jewels — Digital Gold & Silver Platform",
+      "category": "Android & iOS Mobile App",
+      "badgeColor": "sky",
+      "description": "Mobile application with features for digital gold/silver purchase, sell, and redemption, portfolio tracking, KYC verification, transaction history, and account management deployed to both app stores.",
+      "longDescription": "Engineered a robust digital metals trading and investment platform on React Native. Implemented user-facing features including live gold/silver rates, digital investment portfolios, transaction history, SIP/savings plans, KYC verification, redemption, and account management with responsive Figma-to-code implementations.",
+      "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React Native",
+        "JavaScript",
+        "REST APIs",
+        "React Query",
+        "Google Play",
+        "App Store"
+      ],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Integrated live rate calculation engine for 24K 999 gold and 999 silver",
+        "Automated KYC documentation and bank account verification workflows",
+        "Detailed transaction logs, invoice generation, and historical performance charts",
+        "Successfully deployed and maintained on both Google Play Store and Apple App Store"
+      ],
+      "metrics": {
+        "Platforms": "Android & iOS",
+        "Deployment": "Dual App Stores",
+        "Architecture": "API-Driven Workflows"
+      }
+    },
+    {
+      "id": "mayur-jewellers",
+      "title": "Mayur Jewellers — Digital Investment App",
+      "category": "Android & iOS Mobile App",
+      "badgeColor": "indigo",
+      "description": "Mobile application for digital gold/silver investment and jewellery-related services, implementing reusable UI components, API integrations, investment workflows, and user accounts.",
+      "longDescription": "Developed the branded mobile application for Mayur Jewellers bridging digital bullion savings with retail jewellery services. Created modular UI components using TypeScript and Tailwind CSS/NativeWind, integrated secure payment and transaction workflows, managed server-side state with React Query, and handled release signing and store deployments.",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React Native",
+        "TypeScript",
+        "Tailwind CSS",
+        "Axios",
+        "Figma"
+      ],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Reusable TypeScript UI component system built directly from Figma designs",
+        "Integrated payment gateways and transaction workflows for metal purchases",
+        "Form validation with React Hook Form and error boundary handling",
+        "Release configuration, signing, and production deployment across Android & iOS"
+      ],
+      "metrics": {
+        "Platforms": "Android & iOS",
+        "Type": "Jewellery & Digital Gold",
+        "UI Engine": "NativeWind / Tailwind"
+      }
+    },
+    {
+      "id": "priyadarshi-jewells",
+      "title": "Priyadarshi Jewells — Gold & Silver Savings App",
+      "category": "Android & iOS Mobile App",
+      "badgeColor": "amber",
+      "description": "Production mobile application supporting gold/silver SIPs, savings schemes, portfolio management, redemption, and transaction-related workflows.",
+      "longDescription": "Engineered a production-ready mobile application enabling retail customers to start micro-savings in 24K pure gold and silver. Implemented flexible daily/monthly SIP schemes, portfolio tracking with live valuation updates, KYC onboarding, secure OTP login, and physical store redemption workflows.",
+      "image": "https://images.unsplash.com/photo-1624365169364-0652750d4d12?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React Native",
+        "TypeScript",
+        "REST APIs",
+        "React Navigation",
+        "State Mgmt"
+      ],
+      "liveUrl": "https://github.com/vjy2080",
+      "githubUrl": "https://github.com/vjy2080",
+      "highlights": [
+        "Gold and silver micro-savings scheme with flexible installment intervals",
+        "Dynamic portfolio analytics showing unrealized gains and investment trends",
+        "Robust REST API integrations with Axios, error handling, and loading skeletons",
+        "Streamlined Google Play Store & iOS App Store production builds"
+      ],
+      "metrics": {
+        "Platforms": "Android & iOS",
+        "Core Feature": "Gold & Silver SIP Schemes",
+        "Stack": "React Native + TypeScript"
+      }
+    },
     {
       "id": "huzzle-app",
       "title": "Huzzle App",
@@ -62,7 +197,14 @@
       "description": "Cross-platform mobile application developed for Android and iOS using React Native. Contributed to core features, custom reusable UI components, and supported deployment on both mobile platforms.",
       "longDescription": "Production mobile application built with React Native and TypeScript, engineered for seamless performance across both Android and iOS devices. Developed modular UI components from Figma prototypes, implemented smooth screen navigation via React Navigation, integrated backend REST APIs and Firebase services, and supported the deployment lifecycle on Google Play Store and Apple App Store.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAAVzzxHy-nK471SwbZxvTtUXLCuULq6Q6IN8a3_Y2ALQyBqy4vrvgq2D1iwHeuXBjjvsMOQGP_pR7LnXSeDKuDBZ2jHq9wPzVFrz4Rec3Z-_U_A6m_blDc-nQo7lOQrHDm2m8eC00P04b22ovkfSetNxRzc6BsgeyBpWu36iGOugaCspax2uPp4PDa1mBgeBy4KUDdh6RPaFzUGcFq8JEXmQcA1ili67ZdjiW_S1Y8Mr0cewaVti8rmA",
-      "tags": ["React Native", "TypeScript", "React Navigation", "Firebase"],
+      "tags": [
+        "React Native",
+        "TypeScript",
+        "React Navigation",
+        "Firebase",
+        "Play Store",
+        "App Store"
+      ],
       "liveUrl": "https://github.com/vjy2080",
       "githubUrl": "https://github.com/vjy2080",
       "highlights": [
@@ -74,7 +216,7 @@
       "metrics": {
         "Platforms": "Android & iOS",
         "Stack": "React Native",
-        "Deployment": "Google Play Store"
+        "Deployment": "Google Play & App Store"
       }
     },
     {
@@ -85,7 +227,13 @@
       "description": "Multi-app ecosystem featuring Guest and Gatekeeper mobile apps for secure entry management, paired with a Next.js Web Admin Panel for visitor control and real-time analytics.",
       "longDescription": "Comprehensive access control solution spanning mobile clients and an enterprise administrative panel. Engineered two specialized mobile applications (Guest App and Gatekeeper App) using React Native (Expo) for visitor pass creation, QR scanning, and OTP verification. Built the Next.js Web Admin Panel with Tailwind CSS for security administrators to oversee real-time facility check-ins, visitor logs, and permissions.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA22c8itEID61Nzi3uIVrWf1SM4cPB2Y8W764ahvBFgp0FDW05K34bUofSQfkAvkj2l6E4ARLivX54TP8KFDWhMhtOiQx88UX6FGl8d38NGKW4gxIgRw9l6FjreI_bQq3QljYlVF2dDHaFn1HzYQMdwM7skJaK4L_HSHTlBsBX49-LTHNLxiULl5QJlduZurBVU8Bq0z8TddvkoNurEAxwXLhj3eo3Pnn9VsdGfECDckYlwX4zaY1QXXg",
-      "tags": ["React Native (Expo)", "Next.js", "Tailwind CSS", "Firebase"],
+      "tags": [
+        "React Native (Expo)",
+        "Next.js",
+        "Tailwind CSS",
+        "Firebase Firestore",
+        "QR & OTP"
+      ],
       "liveUrl": "https://github.com/vjy2080",
       "githubUrl": "https://github.com/vjy2080",
       "highlights": [
@@ -108,7 +256,13 @@
       "description": "Android application built with Flutter featuring offline data synchronization, optimized for seamless operation in low-connectivity environments.",
       "longDescription": "Robust Android client engineered with Flutter and Dart, specifically designed to function reliably in field scenarios with intermittent or zero internet connectivity. Implemented offline local caching mechanisms, automatic sync on network restoration, fluid screen transitions with Flutter Navigator, and robust RESTful API integration.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBigrg11BFqgMRSeWaxFFJ1OCb5TXu8F_cAcMi2gqva1YxWNoL_xa3on0NnzMpi2sXSACLNYUAW-0rVKqg-X57mI6aXN0deOuqAnO75j8ygYwa2ALgLgNoAXWNb9hsb1YM3Vq30Mb9va9ntj_kzg_sirw2nC7Ap56SyxytlCJNo8AWXAr-7mikAwsH5Czsibc9lZF5vBfjmP9u_MJ6aXfO811oQbvhaDiaSCqOtTlmQF4ckz9BYNCadVw",
-      "tags": ["Flutter", "Dart", "Offline Sync", "REST APIs"],
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Offline Sync",
+        "REST APIs",
+        "Android"
+      ],
       "liveUrl": "https://github.com/vjy2080",
       "githubUrl": "https://github.com/vjy2080",
       "highlights": [
@@ -125,12 +279,12 @@
     }
   ],
   "academicProjects": [
-    "Gyansutra (Full-Fledge App)",
-    "Swift-shop (E-Commerce Web)",
-    "Bike-Vista (Vehicle Showcase)",
-    "Live-News App (Real-time Aggregator)",
-    "Weather App (Live Forecasts)",
-    "Developer Portfolio (React & Tailwind)"
+    "Portfolio",
+    "Weather App",
+    "Live-News App",
+    "Swift-shop",
+    "Bike-Vista",
+    "Gyansutra (Full-Fledge App)"
   ],
   "skills": [
     {
@@ -140,10 +294,30 @@
       "icon": "phone_iphone",
       "accent": "sky",
       "skills": [
-        { "name": "ReactJS & Next.js", "percentage": 96, "experience": "2+ yrs", "specialty": "Next.js, Hooks, State, Component Architecture" },
-        { "name": "React Native", "percentage": 94, "experience": "2+ yrs", "specialty": "Expo, React Navigation, Mobile UI, Play Store" },
-        { "name": "Flutter & Dart", "percentage": 90, "experience": "2+ yrs", "specialty": "Flutter Navigator, Offline Sync, Android" },
-        { "name": "TypeScript & JS", "percentage": 95, "experience": "2+ yrs", "specialty": "ES6+, Async/Await, Strict Typing, Vue.js" }
+        {
+          "name": "ReactJS & Next.js",
+          "percentage": 96,
+          "experience": "2+ yrs",
+          "specialty": "Next.js, Hooks, State, Component Architecture"
+        },
+        {
+          "name": "React Native",
+          "percentage": 95,
+          "experience": "2+ yrs",
+          "specialty": "Expo, React Navigation, NativeWind, Play Store & App Store"
+        },
+        {
+          "name": "Flutter & Dart",
+          "percentage": 90,
+          "experience": "2+ yrs",
+          "specialty": "Flutter Navigator, Offline Sync, Android Widgets"
+        },
+        {
+          "name": "TypeScript & JS",
+          "percentage": 95,
+          "experience": "2+ yrs",
+          "specialty": "TypeScript, JavaScript ES6+, Async/Await, Strict Typing"
+        }
       ]
     },
     {
@@ -153,41 +327,105 @@
       "icon": "palette",
       "accent": "indigo",
       "skills": [
-        { "name": "Tailwind CSS", "percentage": 96, "experience": "2+ yrs", "specialty": "Responsive Layouts, Glassmorphism, JIT" },
-        { "name": "Figma-to-Code", "percentage": 98, "experience": "2+ yrs", "specialty": "Pixel-accurate conversion, UI Components" },
-        { "name": "Responsive Design", "percentage": 96, "experience": "2+ yrs", "specialty": "Mobile-first, Flexbox, CSS Grid, Media Queries" },
-        { "name": "Bootstrap & HTML/CSS", "percentage": 92, "experience": "2+ yrs", "specialty": "jQuery, Semantic HTML5, CSS3, DOM Handling" }
+        {
+          "name": "Tailwind CSS & NativeWind",
+          "percentage": 96,
+          "experience": "2+ yrs",
+          "specialty": "Responsive Layouts, Glassmorphism, Mobile Styling"
+        },
+        {
+          "name": "Figma-to-Code",
+          "percentage": 98,
+          "experience": "2+ yrs",
+          "specialty": "Pixel-accurate conversion, Reusable UI Components"
+        },
+        {
+          "name": "Responsive Design",
+          "percentage": 96,
+          "experience": "2+ yrs",
+          "specialty": "Mobile-first, Flexbox, Grid, Multi-device Adaptation"
+        },
+        {
+          "name": "Bootstrap, jQuery, HTML/CSS",
+          "percentage": 92,
+          "experience": "2+ yrs",
+          "specialty": "Semantic HTML5, CSS3, DOM Manipulation, Event Handling"
+        }
       ]
     },
     {
       "id": "data-tools",
-      "title": "Data, Auth & Tooling",
-      "subtitle": "Firebase & Agile Deployment",
+      "title": "Data, Auth & Tools",
+      "subtitle": "APIs, Firebase & Deployment",
       "icon": "account_tree",
       "accent": "sky",
       "skills": [
-        { "name": "Firebase (Auth/Firestore)", "percentage": 94, "experience": "2+ yrs", "specialty": "Google Sign-In, OTP, Firestore, Hosting" },
-        { "name": "REST API & Swagger", "percentage": 95, "experience": "2+ yrs", "specialty": "Postman, JSON Server, API Integration" },
-        { "name": "Git & GitHub", "percentage": 94, "experience": "2+ yrs", "specialty": "Version Control, Pull Requests, Agile/Jira" },
-        { "name": "IDE & Deployment", "percentage": 92, "experience": "2+ yrs", "specialty": "VS Code, Android Studio, Xcode, Vercel" }
+        {
+          "name": "REST API Integration & Axios",
+          "percentage": 96,
+          "experience": "2+ yrs",
+          "specialty": "Axios, React Query, React Hook Form, JSON Server, Swagger"
+        },
+        {
+          "name": "Firebase Auth & Firestore",
+          "percentage": 94,
+          "experience": "2+ yrs",
+          "specialty": "Email/Password, Google Sign-In, OTP Verification, Hosting"
+        },
+        {
+          "name": "Git & GitHub & Jira",
+          "percentage": 95,
+          "experience": "2+ yrs",
+          "specialty": "Version Control, Pull Requests, Agile Workflows, Postman"
+        },
+        {
+          "name": "Tools & Mobile Deployment",
+          "percentage": 94,
+          "experience": "2+ yrs",
+          "specialty": "Android Studio, Xcode, VS Code, Cursor, Vercel, Firebase"
+        }
       ]
     }
   ],
   "experiences": [
     {
-      "id": "exp-1",
+      "id": "exp-fleek",
+      "role": "React Native Developer",
+      "company": "Fleek Media Pvt. Ltd.",
+      "location": "Ahmedabad, India",
+      "period": "6+ Months (Present)",
+      "badgeColor": "sky",
+      "dotColor": "sky",
+      "description": "Developed and maintained production-ready React Native mobile applications for digital gold, silver investment, and jewellery savings platforms including GoldCart, Digi Jewels, Mayur Jewellers, and Priyadarshi Jewels.",
+      "achievements": [
+        "Developed and maintained production-ready React Native mobile applications for digital gold, silver investment and jewellery savings platforms",
+        "Built and delivered multiple production applications, including GoldCart, Digi Jewels, Mayur Jewellers and Priyadarshi Jewels, with features for digital gold/silver buying, selling, savings and portfolio management",
+        "Implemented user-facing features including live gold/silver rates, digital investment portfolios, transaction history, SIP/savings plans, KYC verification, redemption and account management",
+        "Developed responsive and reusable mobile UI components using React Native, TypeScript and NativeWind/Tailwind CSS based on Figma designs",
+        "Integrated REST APIs and managed server-side data using Axios, React Query and React Hook Form, including API-driven authentication, transactions and user workflows",
+        "Implemented secure authentication and user flows including OTP verification, registration, login, KYC and profile management",
+        "Integrated payment and transaction workflows for digital gold/silver purchases and savings-related operations",
+        "Implemented application navigation, form validation, API error handling, loading states and reusable components for scalable mobile applications",
+        "Tested and debugged applications across Android and iOS devices, resolving UI, API, navigation and production issues",
+        "Prepared and managed Android and iOS production builds, including release configuration, signing and deployment processes",
+        "Successfully deployed and maintained mobile applications on both Google Play Store and Apple App Store",
+        "Worked with Git/GitHub for version control and collaborated with designers, backend developers and QA teams throughout the development lifecycle"
+      ]
+    },
+    {
+      "id": "exp-reva",
       "role": "Front-End Developer",
       "company": "Reva Infosoft Pvt. Ltd.",
       "location": "Ahmedabad, India",
-      "period": "2+ Years (Present)",
-      "badgeColor": "sky",
-      "dotColor": "sky",
+      "period": "2+ Years",
+      "badgeColor": "indigo",
+      "dotColor": "indigo",
       "description": "Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter. Built custom, reusable UI components and responsive layouts using Tailwind CSS and native UI frameworks.",
       "achievements": [
-        "Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native, and Flutter",
+        "Developed production-ready interfaces across ReactJS, Next.js, Vue.js, React Native and Flutter",
         "Built custom, reusable UI components and responsive layouts using Tailwind CSS and native UI frameworks",
         "Converted Figma designs into pixel-accurate frontend implementations",
-        "Integrated Firebase services including Authentication (Email/Password, Google Sign-In, OTP verification), Firestore, and Hosting",
+        "Integrated Firebase services including Authentication (Email/Password, Google Sign-In, OTP verification), Firestore, and Hosting across web and mobile applications",
         "Worked with JSON Server for mock APIs; tested APIs using Postman and documented APIs with Swagger",
         "Implemented application routing using React Navigation and Flutter Navigator",
         "Deployed web applications through Vercel/Firebase Hosting and mobile applications to Google Play Store",
@@ -195,32 +433,32 @@
       ]
     },
     {
-      "id": "exp-2",
-      "role": "ReactJS Developer — Internship",
+      "id": "exp-tops",
+      "role": "React-JS Developer — Internship",
       "company": "Tops Technologies Pvt. Ltd.",
       "location": "Ahmedabad, India",
       "period": "6 Months (Mar 2023 – Aug 2023)",
-      "badgeColor": "indigo",
-      "dotColor": "indigo",
-      "description": "Developed ReactJS interfaces with Redux and RESTful API integration. Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS.",
+      "badgeColor": "sky",
+      "dotColor": "sky",
+      "description": "Developed React-JS interfaces with Redux and RESTful API integration. Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS.",
       "achievements": [
-        "Developed ReactJS interfaces with Redux and RESTful API integration",
-        "Built reusable components and dynamic user interfaces with JavaScript, HTML, and CSS",
+        "Developed React-JS interfaces with Redux and RESTful API integration",
+        "Built reusable components and dynamic user interfaces with JavaScript, HTML and CSS",
         "Used Bootstrap for responsive, mobile-friendly layouts and jQuery for DOM manipulation and event handling"
       ]
     },
     {
-      "id": "exp-3",
+      "id": "exp-pcb",
       "role": "Production Engineer — Non-Tech",
       "company": "PCB Manufacturer",
       "location": "Gandhinagar, India",
-      "period": "11 Years",
-      "badgeColor": "sky",
-      "dotColor": "sky",
-      "description": "Worked in a PCB manufacturing company as a Production Engineer, managing precision fabrication processes, workflow optimization, and quality assurance before pivoting full-time into software engineering.",
+      "period": "6 Months",
+      "badgeColor": "slate",
+      "dotColor": "slate",
+      "description": "Worked in a PCB manufacturing company as a Production Engineer, managing precision fabrication processes and workflow operations before pivoting full-time into software engineering.",
       "achievements": [
-        "Managed precision engineering operations, quality control, and production scheduling",
-        "Demonstrated systematic problem-solving and analytical discipline across 11 years of engineering operations"
+        "Worked in a PCB manufacturing company as a Production Engineer",
+        "Demonstrated systematic engineering problem-solving and rigorous quality assurance discipline"
       ]
     }
   ],
@@ -231,7 +469,7 @@
       "institution": "Tops Technologies Pvt. Ltd.",
       "period": "Mar 2023 – Aug 2023",
       "location": "Ahmedabad, India",
-      "highlight": "Hands-on specialization in ReactJS, Redux, modern JavaScript, and responsive UI development"
+      "highlight": "Specialization in ReactJS, Redux, modern JavaScript, and responsive UI development"
     },
     {
       "id": "edu-2",
@@ -259,19 +497,46 @@
     "location": "Gandhinagar, Gujarat, India",
     "github": "github.com/vjy2080",
     "githubUrl": "https://github.com/vjy2080",
-    "repoUrl": "https://github.com/vjy2080/my-portfolio.git"
+    "repoUrl": "https://github.com/vjy2080/Vijay-Portfolio.git"
   },
   "navLinks": [
-    { "label": "Home", "href": "#" },
-    { "label": "Projects", "href": "#projects" },
-    { "label": "Skills", "href": "#skills" },
-    { "label": "Experience", "href": "#experience" },
-    { "label": "Education", "href": "#education" },
-    { "label": "Contact", "href": "#contact" }
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Education",
+      "href": "#education"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
   ],
   "socials": [
-    { "name": "GitHub", "url": "https://github.com/vjy2080" },
-    { "name": "Email", "url": "mailto:vjy2080@gmail.com" },
-    { "name": "Phone", "url": "tel:+919998517185" }
+    {
+      "name": "GitHub",
+      "url": "https://github.com/vjy2080"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:vjy2080@gmail.com"
+    },
+    {
+      "name": "Phone",
+      "url": "tel:+919998517185"
+    }
   ]
 }

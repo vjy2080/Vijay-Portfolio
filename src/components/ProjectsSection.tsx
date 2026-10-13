@@ -43,7 +43,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-16 md:gap-20">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
           <div className="flex flex-col gap-3">
             <span className="text-xs uppercase tracking-widest text-sky-400 font-semibold flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5" />
@@ -54,46 +54,43 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
             </h2>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="flex flex-col  sm:items-center gap-4">
             {/* Filter buttons */}
-            <div className="inline-flex p-1 rounded-xl bg-slate-900/60 border border-sky-500/20 self-start sm:self-auto">
+            <div className="inline-flex p-1 gap-1 rounded-xl bg-slate-900/60 border border-sky-500/20 self-start sm:self-auto">
               <button
                 type="button"
                 onClick={() => setFilter('all')}
-                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all cursor-pointer ${
-                  filter === 'all'
+                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all cursor-pointer ${filter === 'all'
                     ? 'bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm'
                     : 'text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 All Projects ({projects.length})
               </button>
               <button
                 type="button"
                 onClick={() => setFilter('mobile')}
-                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all cursor-pointer ${
-                  filter === 'mobile'
+                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all cursor-pointer ${filter === 'mobile'
                     ? 'bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm'
                     : 'text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 Mobile Apps
               </button>
               <button
                 type="button"
                 onClick={() => setFilter('web')}
-                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all cursor-pointer ${
-                  filter === 'web'
+                className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all cursor-pointer ${filter === 'web'
                     ? 'bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm'
                     : 'text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 Web &amp; Admin Suite
               </button>
             </div>
 
-            <p className="text-slate-300 max-w-md text-sm md:text-base leading-relaxed font-light">
-              Production mobile and web applications built with React Native, Next.js, and Flutter. Featuring offline synchronization, secure Firebase auth, and pixel-accurate UI.
+            <p className="text-slate-300 max-w-md text-xs md:text-sm leading-relaxed font-light">
+              {`Production mobile and web applications built with React Native, Next.js, and Flutter. Featuring offline synchronization, secure Firebase auth, and pixel-accurate UI.`}
             </p>
           </div>
         </div>
